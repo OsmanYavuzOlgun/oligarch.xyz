@@ -11,6 +11,8 @@
 <link href="https://fonts.cdnfonts.com/css/circular-std" rel="stylesheet">
 
 <body>
+ 
+
     <header>
         <section class="header">
             <div class="container">
@@ -38,9 +40,31 @@
         </section>
     </header>
     <main>
-
-        <section class="introduction">
+        <div id="loading">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="knight-helmet">
+                <path fill="#605a5a"
+                    d="m287.09 504.5 113.4-115a30.1 30.1 0 0 0 8.64-21.07V206.55A152.56 152.56 0 0 0 298 59.93a153.69 153.69 0 0 0-84 0 152.56 152.56 0 0 0-111.13 146.62v162a30 30 0 0 0 8.5 20.92l111.84 115-32.37-191.32-42.74-49.62-13.89-42.82 97.49 40.1 9.72 48.94-5.56 27.87L256 368.77l20.14-31.15-5.56-27.87 9.72-48.94 97.49-40.1-13.89 42.82-42.74 49.62Z">
+                </path>
+                <g class="skull_green">
+                    <path fill="#00000"
+                        d="M298 59.93a153.74 153.74 0 0 0-49.5-5.64 152.88 152.88 0 0 1 145.63 152.26v161.88a30.1 30.1 0 0 1-8.64 21.07l-95.09 96.44-3.31 18.56 113.4-115a30.1 30.1 0 0 0 8.64-21.07V206.55A152.56 152.56 0 0 0 298 59.93zm-149.9 203.6-13.89-42.82a10.65 10.65 0 0 0-10.48 13.93l9.37 28.89 42.74 49.62 29.21 172.65 18.16 18.67-32.37-191.32z">
+                    </path>
+                </g>
+                <path fill="#605a5a"
+                    d="m270.58 309.75 9.72-48.94 97.49-40.1a9.39 9.39 0 0 0-10.16-2l-95.87 39.43a13 13 0 0 0-7.82 9.51l-7.45 37.53a23.33 23.33 0 0 0 0 9.12l2.79 14a23.37 23.37 0 0 1-3.28 17.28l-7.49 11.59 7.5 11.6 20.14-31.15ZM275.11 161.93l-16.38 10.87-16.38-10.87-10.92-132.68 27.3-21.75 27.31 21.75-10.93 132.68z">
+                </path>
+                <path fill="#605a5a"
+                    d="m258.73 7.5-7.5 6 10.63 8.47a22 22 0 0 1 8.22 19L261 151.31a22 22 0 0 1-9.75 16.51l7.5 5 16.38-10.87L286 29.25Z">
+                </path>
+            </svg>
+        </div>
+        <section class="introduction" id="introduction">
             <div class="container">
+                <!--   <svg width="100" height="100">
+                    <path d="M50 10 L20 40 L80 40 Z" fill="#333" stroke="#fff" stroke-width="2" />
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="50 50 50"
+                        to="360 50 50" dur="5s" repeatCount="indefinite" />
+                </svg> -->
                 <div class="box">
                     <div class="infobox column">
                         <p class="infobox-boldtext">
@@ -53,7 +77,7 @@
                         </p>
                         <div class="infobox-btnwrapper">
                             <button class="infobox-explorebtn selected">Explore</button>
-                            <button class="infobox-createbtn">Create</button>
+                            <button class="infobox-createbtn">Explore</button>
                         </div>
                     </div>
                     <div class="display column">
@@ -102,7 +126,7 @@
                                 <p>Lorem Ipsum</p>
                                 <p>1.20 Weth</p>
                             </div>
-                            
+
                         </div>
                         <div class=item>
                             <img class="item-img"
@@ -112,7 +136,7 @@
                                 <p>Lorem Ipsum</p>
                                 <p>1.20 Weth</p>
                             </div>
-                            
+
                         </div>
                         <div class=item>
                             <img class="item-img"
@@ -122,7 +146,7 @@
                                 <p>Lorem Ipsum</p>
                                 <p>1.20 Weth</p>
                             </div>
-                            
+
                         </div>
                         <div class=item>
                             <img class="item-img"
@@ -132,7 +156,7 @@
                                 <p>Lorem Ipsum</p>
                                 <p>1.20 Weth</p>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -171,7 +195,7 @@
                         </div>
                         <div class="itemwrapper">
                             <div class="started-items-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="px" viewBox="0 0 36 31">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 31">
                                     <path style="stroke:none;fill-rule:evenodd;fill:#bdbdbd;fill-opacity:1"
                                         d="M2.832 2.9219c-.2148 0-.3867.1758-.3867.3906v24.375c0 .2148.1719.3906.3867.3906h4.9453l13.332-14.1875c1.0548-1.121 2.8165-1.1445 3.8985-.0508l8.5469 8.6407V3.3125c0-.2148-.1719-.3906-.3867-.3906Zm30.336 27.5156H2.832c-1.5039 0-2.7226-1.2305-2.7226-2.75V3.3125c0-1.5195 1.2187-2.75 2.7226-2.75h30.336c1.5039 0 2.7226 1.2305 2.7226 2.75v24.375c0 1.5195-1.2187 2.75-2.7226 2.75ZM22.8008 15.5156 10.996 28.0781H33.168c.2148 0 .3867-.1758.3867-.3906v-1.871L23.3594 15.5077a.388.388 0 0 0-.5586.0078Zm-9.4688-4.3398c0 1.5195-1.2187 2.75-2.7226 2.75-1.5 0-2.7188-1.2305-2.7188-2.75 0-1.5196 1.2188-2.75 2.7188-2.75 1.5039 0 2.7226 1.2304 2.7226 2.75Zm2.336 0c0 2.8242-2.2657 5.1094-5.0586 5.1094-2.789 0-5.0547-2.2852-5.0547-5.1094s2.2656-5.1094 5.0547-5.1094c2.793 0 5.0586 2.2852 5.0586 5.1094Zm0 0" />
                                 </svg>
@@ -207,7 +231,7 @@
                                 <p>Lorem Ipsum</p>
                                 <p>1.20 Weth</p>
                             </div>
-                            
+
                         </div>
                         <div class="item">
                             <img class="item-img"
@@ -217,7 +241,7 @@
                                 <p>Lorem Ipsum</p>
                                 <p>1.20 Weth</p>
                             </div>
-                            
+
                         </div>
                         <div class="item">
                             <img class="item-img"
@@ -227,7 +251,7 @@
                                 <p>Lorem Ipsum</p>
                                 <p>1.20 Weth</p>
                             </div>
-                            
+
                         </div>
                         <div class="item">
                             <img class="item-img"
@@ -237,7 +261,7 @@
                                 <p>Lorem Ipsum</p>
                                 <p>1.20 Weth</p>
                             </div>
-                            
+
                         </div>
                         <div class="item">
                             <img class="item-img"
@@ -247,7 +271,7 @@
                                 <p>Lorem Ipsum</p>
                                 <p>1.20 Weth</p>
                             </div>
-                            
+
                         </div>
                         <div class="item">
                             <img class="item-img"
@@ -257,7 +281,7 @@
                                 <p>Lorem Ipsum</p>
                                 <p>1.20 Weth</p>
                             </div>
-                            
+
                         </div>
                         <div class="item">
                             <img class="item-img"
@@ -267,7 +291,7 @@
                                 <p>Lorem Ipsum</p>
                                 <p>1.20 Weth</p>
                             </div>
-                            
+
                         </div>
                         <div class="item">
                             <img class="item-img"
@@ -277,50 +301,68 @@
                                 <p>Lorem Ipsum</p>
                                 <p>1.20 Weth</p>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section>
-            <div class="container">
-                <div class="footer">
-                    <div class="footer-main">
-                        Etiam et id tincidunt faucibus mollis a sociis pretium fermentum quis magna faucibus lacus.
+        <footer>
+            <section class="footer-bottom">
+                <div class="container">
+                    <div class="footer">
+                        <div class="footer-main">
+                            Etiam et id tincidunt faucibus mollis a sociis pretium fermentum quis magna faucibus lacus.
+                        </div>
+                        <div class="footer-navigate">
+                            <div class="nav">
+                                <h5>Marketplace</h5>
+                                <p>Home</p>
+                                <p>Activity</p>
+                                <p>Discover</p>
+                                <p>Learn more</p>
+                            </div>
+                            <div class="nav">
+                                <h5>Company</h5>
+                                <p>About Us</p>
+                                <p>Services</p>
+                                <p>Portfolio</p>
+                            </div>
+                            <div class="nav">
+                                <h5>Contact</h5>
+                                <p>Facebook</p>
+                                <p>Instagram</p>
+                                <p>Twitter</p>
+                                <p>Email</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="footer-navigate">
-                        <div class="nav">
-                            <h5>Marketplace</h5>
-                            <p>Home</p>
-                            <p>Activity</p>
-                            <p>Discover</p>
-                            <p>Learn more</p>
-                        </div>
-                        <div class="nav">
-                            <h5>Company</h5>
-                            <p>About Us</p>
-                            <p>Services</p>
-                            <p>Portfolio</p>
-                        </div>
-                        <div class="nav">
-                            <h5>Contact</h5>
-                            <p>Facebook</p>
-                            <p>Instagram</p>
-                            <p>Twitter</p>
-                            <p>Email</p>
-                        </div>
+                    <div class="footer2">
+                        <p class="copyright">Copyright 2021 OLIGARCH</p>
                     </div>
                 </div>
-                <div class="footer2">
-                    <div></div>
-                    <p>Copyright 2021 Gaslur</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
+            </section>
+        </footer>
 </body>
+</main>
 
 </html>
+
+<script>
+ 
+    setTimeout(function () {
+        document.querySelector('#loading').style.display = "none";
+   /*      var beforeElement = document.querySelector("#introduction::before");
+		beforeElement.style.display = "none";
+
+		var afterElement = document.querySelector("#introduction::after");
+		afterElement.style.display = "none"; */
+
+     /*    var beforeStyles  = window.getComputedStyle(myElement, "::before");
+        var afterStyles   = window.getComputedStyle(myElement, "::after"); */
+        var sections = document.getElementsByTagName("section");
+        for (var i = 0; i < sections.length; i++) {
+			sections[i].style.display = "block";
+		}
+    }, 3500);
+</script>
