@@ -1,0 +1,184 @@
+$transition: 40; // These 4 values
+$dots: 12; // should be
+$lg-stars: 2; // synced with
+$sm-stars: 2; // JS code.
+$px: 4px;
+$lg-star: 48px;
+$sm-star: 28px;
+$star-color: #fec8c9;
+$level-colors: (#f9329d, #fe5eb4, #fe6fbb, #fe70ee, #e270fe, #ba70fe);
+$levels: length($level-colors);
+
+.sky {
+  width: 100%;
+  height: 100%;
+  z-index: 22;
+  animation: fade-in 4s linear infinite;
+}
+
+.sky-stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 22;
+
+  .dot {
+    position: absolute;
+    animation: fade-in 4s linear infinite;
+    width: 20px;
+    display: none;
+    height: 20px;
+    background-color: white;
+    @for $i from 1 through $dots {
+      &:nth-child(#{$i}) {
+        top: #{random(90) + "%"};
+        left: #{random(100) + "%"};
+      }
+    }
+
+    &--blinking {
+      animation: blink 12.25s linear infinite;
+    }
+  }
+
+  .star {
+    position: absolute;
+    color: white;
+    animation: scale 0.5s linear infinite;
+
+    &--sm {
+      width: $sm-star;
+      height: $sm-star;
+
+      @for $i from 1 through $sm-stars {
+        $index: $dots + $i;
+        &:nth-child(#{$index}) {
+          top: 76%;
+          left: 510px;
+        }
+        &:nth-child(#{$index + 1}) {
+          top: 17% !important;
+          left: 493px !important;
+        }
+      }
+    }
+
+    &--lg {
+      width: $lg-star;
+      height: $lg-star;
+
+      @for $i from 1 through $lg-stars {
+        $index: $dots + $sm-stars + $i;
+        &:nth-child(#{$index}) {
+          top: 86%;
+          right: 510px;
+        }
+        &:nth-child(#{$index + 1}) {
+          top: 22% !important;
+          right: 493px !important;
+        }
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: currentColor;
+      animation: grow 0.5s linear infinite;
+    }
+
+    &__part {
+      position: absolute;
+      background: currentColor;
+
+      &:nth-child(1) {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 20%;
+      }
+
+      &:nth-child(2) {
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        width: 20%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@keyframes blink {
+  0%,
+  32%,
+  67% {
+    opacity: 1;
+  }
+  33%,
+  66% {
+    opacity: 0;
+  }
+}
+
+@keyframes scale {
+  0%,
+  16.4%,
+  83.6%,
+  100% {
+    transform: scale(0.75, 0.75);
+  }
+  16.5%,
+  33%,
+  66.6%,
+  83.5% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes grow {
+  0%,
+  16.4%,
+  83.6%,
+  100% {
+    width: 20%;
+    height: 20%;
+  }
+  16.5%,
+  33%,
+  66.6%,
+  83.5% {
+    width: 50%;
+    height: 50%;
+  }
+  33.1%,
+  50%,
+  66.5% {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0.6;
+  }
+
+  60% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

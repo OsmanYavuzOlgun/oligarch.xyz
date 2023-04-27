@@ -8,11 +8,11 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="animation.css">
+
 <link href="https://fonts.cdnfonts.com/css/circular-std" rel="stylesheet">
 
 <body>
- 
-
     <header>
         <section class="header">
             <div class="container">
@@ -41,23 +41,33 @@
     </header>
     <main>
         <div id="loading">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="knight-helmet">
-                <path fill="#605a5a"
-                    d="m287.09 504.5 113.4-115a30.1 30.1 0 0 0 8.64-21.07V206.55A152.56 152.56 0 0 0 298 59.93a153.69 153.69 0 0 0-84 0 152.56 152.56 0 0 0-111.13 146.62v162a30 30 0 0 0 8.5 20.92l111.84 115-32.37-191.32-42.74-49.62-13.89-42.82 97.49 40.1 9.72 48.94-5.56 27.87L256 368.77l20.14-31.15-5.56-27.87 9.72-48.94 97.49-40.1-13.89 42.82-42.74 49.62Z">
-                </path>
-                <g class="skull_green">
-                    <path fill="#00000"
-                        d="M298 59.93a153.74 153.74 0 0 0-49.5-5.64 152.88 152.88 0 0 1 145.63 152.26v161.88a30.1 30.1 0 0 1-8.64 21.07l-95.09 96.44-3.31 18.56 113.4-115a30.1 30.1 0 0 0 8.64-21.07V206.55A152.56 152.56 0 0 0 298 59.93zm-149.9 203.6-13.89-42.82a10.65 10.65 0 0 0-10.48 13.93l9.37 28.89 42.74 49.62 29.21 172.65 18.16 18.67-32.37-191.32z">
-                    </path>
-                </g>
-                <path fill="#605a5a"
-                    d="m270.58 309.75 9.72-48.94 97.49-40.1a9.39 9.39 0 0 0-10.16-2l-95.87 39.43a13 13 0 0 0-7.82 9.51l-7.45 37.53a23.33 23.33 0 0 0 0 9.12l2.79 14a23.37 23.37 0 0 1-3.28 17.28l-7.49 11.59 7.5 11.6 20.14-31.15ZM275.11 161.93l-16.38 10.87-16.38-10.87-10.92-132.68 27.3-21.75 27.31 21.75-10.93 132.68z">
-                </path>
-                <path fill="#605a5a"
-                    d="m258.73 7.5-7.5 6 10.63 8.47a22 22 0 0 1 8.22 19L261 151.31a22 22 0 0 1-9.75 16.51l7.5 5 16.38-10.87L286 29.25Z">
-                </path>
-            </svg>
+            <img src="Oligarch-pfp-removebg-preview.png" alt="">
+            <div class="sky">
+                <div id="stars" class="sky-stars"></div>
+            </div>
         </div>
+
+        <section class="click-open-section">
+            <div class="continer">
+                <div class="sidebar">
+                    <div class="contents">
+                        <h3>Content Name 1</h3>
+                        <p><span class="sub-title">Sub-Title 1:</span> This is the content of sub-title 1.</p>
+                        <hr>
+                        <p><span class="sub-title">Sub-Title 2:</span> This is the content of sub-title 2.</p>
+                        <hr>
+                        <h3>Content Name 2</h3>
+                        <p><span class="sub-title">Sub-Title 1:</span> This is the content of sub-title 1.</p>
+                        <hr>
+                        <p><span class="sub-title">Sub-Title 2:</span> This is the content of sub-title 2.</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
         <section class="introduction" id="introduction">
             <div class="container">
                 <!--   <svg width="100" height="100">
@@ -347,22 +357,4 @@
 </main>
 
 </html>
-
-<script>
- 
-    setTimeout(function () {
-        document.querySelector('#loading').style.display = "none";
-   /*      var beforeElement = document.querySelector("#introduction::before");
-		beforeElement.style.display = "none";
-
-		var afterElement = document.querySelector("#introduction::after");
-		afterElement.style.display = "none"; */
-
-     /*    var beforeStyles  = window.getComputedStyle(myElement, "::before");
-        var afterStyles   = window.getComputedStyle(myElement, "::after"); */
-        var sections = document.getElementsByTagName("section");
-        for (var i = 0; i < sections.length; i++) {
-			sections[i].style.display = "block";
-		}
-    }, 3500);
-</script>
+<script src="index.js"></script>

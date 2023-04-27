@@ -7,6 +7,7 @@ body {
   height: 100%;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 header {
@@ -36,19 +37,70 @@ header {
   transform: translate(-50%, -50%);
   text-align: center;
   z-index: 9999;
+  width: 700px;
+  height: 500px;
 }
 
 main {
   section {
     display: none;
+
+    &.click-open-section {
+      .sidebar {
+        background-color: #000000;
+        padding: 10px;
+        width: 200px;
+        height: 100%;
+        color: white;
+
+      }
+      .content {
+        padding: 10px;
+        margin-left: 200px;
+        color: white;
+      }
+      .sub-title {
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        color: white;
+      }
+      hr {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border: 0;
+        border-top: 1px solid #ffffff;
+      }
+
+      /* Media query for responsive design */
+      @media screen and (max-width: 600px) {
+        .sidebar {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+        .content {
+          margin-left: 0;
+        }
+      }
+    }
   }
 
-  svg {
-    width: 500px;
-    max-height: 80vh;
-    animation: fade-in 4s linear infinite;
-    .skull_green {
-      animation: skul 1s linear infinite;
+  #loading {
+    svg,
+    img {
+      width: 500px;
+      height: 500px;
+      position: absolute;
+      z-index: 9999;
+      max-height: 80vh;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: fade-in 4s linear infinite;
+      .skull_green {
+        animation: fade-in 4s linear infinite;
+      }
     }
   }
 
@@ -124,31 +176,31 @@ main {
     position: relative;
   }
 
-.introduction{
+  .introduction {
     &::before {
-        content: "";
-        display: none;
-        position: absolute;
-        width: 123px;
-        height: 123px;
-        left: 60%;
-        top: 138px;
-        filter: blur(90px);
-        background-color: #bfbf1c;
-      }
-    
-      &::after {
-        content: "";
-        display: none;
-        position: absolute;
-        width: 123px;
-        height: 123px;
-        left: 80%;
-        top: 550px;
-        background-color: #18b2de;
-        filter: blur(80px);
-      }
-}
+      content: "";
+      display: none;
+      position: absolute;
+      width: 123px;
+      height: 123px;
+      left: 60%;
+      top: 138px;
+      filter: blur(90px);
+      background-color: #bfbf1c;
+    }
+
+    &::after {
+      content: "";
+      display: none;
+      position: absolute;
+      width: 123px;
+      height: 123px;
+      left: 80%;
+      top: 550px;
+      background-color: #18b2de;
+      filter: blur(80px);
+    }
+  }
 
   .box {
     display: flex;
@@ -924,3 +976,4 @@ main {
     opacity: 1;
   }
 }
+@import "animation";
