@@ -1,8 +1,14 @@
 setTimeout(function () {
   document.querySelector("#loading").style.display = "none";
-  var sections = document.getElementsByTagName("section");
+  /*  var sections = document.getElementsByTagName("section:not(click-open-section)");
   for (var i = 0; i < sections.length; i++) {
     sections[i].style.display = "block";
+  } */
+  var sectionSidebar = document.querySelectorAll(
+    ".click-open-section, .header"
+  );
+  for (let i = 0; i < sectionSidebar.length; i++) {
+    sectionSidebar[i].style.display = "block";
   }
 }, 3500);
 
@@ -54,3 +60,54 @@ var dotStars = nJoin(dots, (e) => {
 });
 
 document.getElementById("stars").innerHTML += dotStars + smallStars + bigStars;
+
+function showIntroduction() {
+  var section = document.getElementById("introduction");
+  section.style.display = "block";
+
+  var otherSections = document.querySelectorAll(
+    "section:not(#introduction):not(#sidebar):not(.header)"
+  );
+  for (var i = 0; i < otherSections.length; i++) {
+    otherSections[i].style.display = "none";
+  }
+}
+
+function showAuction() {
+  var section = document.getElementById("auction");
+  section.style.display = "block";
+
+  var otherSections = document.querySelectorAll(
+    "section:not(#auction):not(#sidebar):not(.header)"
+  );
+  console.log(otherSections);
+  for (var i = 0; i < otherSections.length; i++) {
+    otherSections[i].style.display = "none";
+  }
+}
+
+function showTeam() {
+  var section = document.getElementById("team");
+  section.style.display = "block";
+
+  var otherSections = document.querySelectorAll(
+    "section:not(#team):not(#sidebar):not(.header)"
+  );
+  console.log(otherSections);
+  for (var i = 0; i < otherSections.length; i++) {
+    otherSections[i].style.display = "none";
+  }
+}
+function showGallery() {
+  var section = document.getElementById("gallery");
+  section.style.display = "block";
+
+  var otherSections = document.querySelectorAll(
+    "section:not(#gallery):not(#sidebar):not(.header)"
+  );
+  console.log(otherSections);
+  for (var i = 0; i < otherSections.length; i++) {
+    otherSections[i].style.display = "none";
+  }
+}
+
