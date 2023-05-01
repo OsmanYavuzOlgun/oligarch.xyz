@@ -23,52 +23,52 @@
   background-color: white;
 }
 .sky-stars .dot:nth-child(1) {
-  top: 82%;
-  left: 97%;
+  top: 39%;
+  left: 59%;
 }
 .sky-stars .dot:nth-child(2) {
-  top: 89%;
-  left: 48%;
+  top: 82%;
+  left: 19%;
 }
 .sky-stars .dot:nth-child(3) {
-  top: 89%;
-  left: 59%;
+  top: 45%;
+  left: 73%;
 }
 .sky-stars .dot:nth-child(4) {
-  top: 72%;
-  left: 80%;
+  top: 85%;
+  left: 27%;
 }
 .sky-stars .dot:nth-child(5) {
-  top: 16%;
-  left: 51%;
+  top: 15%;
+  left: 36%;
 }
 .sky-stars .dot:nth-child(6) {
-  top: 51%;
-  left: 59%;
-}
-.sky-stars .dot:nth-child(7) {
-  top: 6%;
-  left: 46%;
-}
-.sky-stars .dot:nth-child(8) {
-  top: 72%;
-  left: 91%;
-}
-.sky-stars .dot:nth-child(9) {
-  top: 35%;
-  left: 14%;
-}
-.sky-stars .dot:nth-child(10) {
-  top: 37%;
+  top: 28%;
   left: 63%;
 }
+.sky-stars .dot:nth-child(7) {
+  top: 85%;
+  left: 29%;
+}
+.sky-stars .dot:nth-child(8) {
+  top: 90%;
+  left: 21%;
+}
+.sky-stars .dot:nth-child(9) {
+  top: 67%;
+  left: 6%;
+}
+.sky-stars .dot:nth-child(10) {
+  top: 63%;
+  left: 2%;
+}
 .sky-stars .dot:nth-child(11) {
-  top: 78%;
-  left: 68%;
+  top: 3%;
+  left: 99%;
 }
 .sky-stars .dot:nth-child(12) {
-  top: 11%;
-  left: 74%;
+  top: 43%;
+  left: 15%;
 }
 .sky-stars .dot--blinking {
   animation: blink 12.25s linear infinite;
@@ -146,6 +146,203 @@
   height: 100%;
 }
 
+.all-booms {
+  display: none;
+}
+.all-booms .lightning-container {
+  display: none;
+}
+.all-booms .boom-container {
+  position: absolute;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  align-items: center;
+  transform: translateY(-50%);
+  left: 200px;
+  bottom: 345px;
+}
+.all-booms .boom-container .shape {
+  display: inline-block;
+  position: relative;
+  opacity: 0;
+  transform-origin: center center;
+}
+.all-booms .boom-container .shape.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  transform-origin: 50% 80%;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  margin-left: -15px;
+  border-width: 0 2.5px 5px 2.5px;
+  border-color: transparent transparent #9b51e0 transparent;
+  animation-name: boom-triangle;
+}
+.all-booms .boom-container .shape.triangle.big {
+  margin-left: -25px;
+  border-width: 0 5px 10px 5px;
+  border-color: transparent transparent #9b51e0 transparent;
+  animation-name: boom-triangle-big;
+}
+.all-booms .boom-container .shape.disc {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #782ac2;
+  animation-name: boom-disc;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+.all-booms .boom-container .shape.circle {
+  width: 20px;
+  height: 20px;
+  animation-name: boom-circle;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  border-radius: 100%;
+  margin-left: -30px;
+}
+.all-booms .boom-container .shape.circle.white {
+  border: 1px solid rgba(155, 81, 224, 0.2901960784);
+}
+.all-booms .boom-container .shape.circle.big {
+  width: 40px;
+  height: 40px;
+  margin-left: 0px;
+}
+.all-booms .boom-container .shape.circle.big.white {
+  border: 2px solid rgba(155, 81, 224, 0.1803921569);
+}
+.all-booms .boom-container .shape:after {
+  background-color: rgba(178, 215, 232, 0.2);
+}
+.all-booms .boom-container .shape.triangle, .all-booms .boom-container .shape.circle, .all-booms .boom-container .shape.circle.big, .all-booms .boom-container .shape.disc {
+  animation-delay: 0.38s;
+  animation-duration: 3s;
+}
+.all-booms .boom-container .shape.circle {
+  animation-delay: 0.6s;
+}
+.all-booms .boom-container.second {
+  left: 485px;
+  top: 155px;
+}
+.all-booms .boom-container.second .shape.triangle, .all-booms .boom-container.second .shape.circle, .all-booms .boom-container.second .shape.circle.big, .all-booms .boom-container.second .shape.disc {
+  animation-delay: 1.9s;
+}
+.all-booms .boom-container.second .shape.circle {
+  animation-delay: 2.15s;
+}
+.all-booms .boom-container.third {
+  right: 285px;
+  left: unset;
+  top: 155px;
+}
+.all-booms .boom-container.third .shape.triangle, .all-booms .boom-container.third .shape.circle, .all-booms .boom-container.third .shape.circle.big, .all-booms .boom-container.third .shape.disc {
+  animation-delay: 5.4s;
+}
+.all-booms .boom-container.third .shape.circle {
+  animation-delay: 5.55s;
+}
+.all-booms .boom-container.fourth {
+  right: 200px;
+  left: unset;
+  bottom: 345px;
+}
+.all-booms .boom-container.fourth .shape.triangle, .all-booms .boom-container.fourth .shape.circle, .all-booms .boom-container.fourth .shape.circle.big, .all-booms .boom-container.fourth .shape.disc {
+  animation-delay: 4.1s;
+}
+.all-booms .boom-container.fourth .shape.circle {
+  animation-delay: 4.18s;
+}
+
+@keyframes woosh {
+  0% {
+    width: 12px;
+    transform: translate(0px, 0px) rotate(-35deg);
+  }
+  15% {
+    width: 50px;
+  }
+  30% {
+    width: 12px;
+    transform: translate(214px, -150px) rotate(-35deg);
+  }
+  30.1% {
+    transform: translate(214px, -150px) rotate(46deg);
+  }
+  50% {
+    width: 110px;
+  }
+  70% {
+    width: 12px;
+    transform: translate(500px, 150px) rotate(46deg);
+  }
+  70.1% {
+    transform: translate(500px, 150px) rotate(-37deg);
+  }
+  85% {
+    width: 50px;
+  }
+  100% {
+    width: 12px;
+    transform: translate(700px, 0) rotate(-37deg);
+  }
+}
+@keyframes boom-circle {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+@keyframes boom-triangle-big {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+    transform: scale(2.5) translate(50px, -50px) rotate(360deg);
+  }
+}
+@keyframes boom-triangle {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+    transform: scale(3) translate(20px, 40px) rotate(360deg);
+  }
+}
+@keyframes boom-disc {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+    transform: scale(2) translate(-70px, -30px);
+  }
+}
 @keyframes blink {
   0%, 32%, 67% {
     opacity: 1;

@@ -1,9 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {});
 
-const sectionNumber1 = document.getElementById("numberOne");
-const sectionNumber2 = document.getElementById("numberTwo");
-const sectionNumber3 = document.getElementById("numberThree");
-const sectionNumber4 = document.getElementById("numberFour");
 setTimeout(function () {
   document.querySelector("#loading").style.display = "none";
   /*  var sections = document.getElementsByTagName("section:not(click-open-section)");
@@ -13,8 +9,17 @@ setTimeout(function () {
   var sectionSidebar = document.querySelectorAll(
     ".click-open-section, .header"
   );
+  var introduction = document.querySelectorAll(
+    ".introduction"
+  );
+/*   var boomsAnimation = document.querySelectorAll(
+    ".all-booms"
+  ); */
+  console.log(introduction);
   for (let i = 0; i < sectionSidebar.length; i++) {
     sectionSidebar[i].style.display = "block";
+    introduction[i].style.display = "block";
+   /*  boomsAnimation[i].style.display = "block"; */
   }
 }, 3500);
 
@@ -68,11 +73,6 @@ var dotStars = nJoin(dots, (e) => {
 document.getElementById("stars").innerHTML += dotStars + smallStars + bigStars;
 
 function showIntroduction() {
-  sectionNumber1.classList.add("pulse-number");
-  sectionNumber2.classList.remove("pulse-number");
-  sectionNumber3.classList.remove("pulse-number");
-  sectionNumber4.classList.remove("pulse-number");
-
   var section = document.getElementById("introduction");
   section.style.display = "block";
 
@@ -86,11 +86,6 @@ function showIntroduction() {
 
 isWorking = false;
 function showAuction() {
-  sectionNumber1.classList.remove("pulse-number");
-  sectionNumber2.classList.add("pulse-number");
-  sectionNumber3.classList.remove("pulse-number");
-  sectionNumber4.classList.remove("pulse-number");
-
   var section = document.getElementById("auction");
   section.style.display = "block";
 
@@ -104,11 +99,6 @@ function showAuction() {
 }
 
 function showTeam() {
-  sectionNumber1.classList.remove("pulse-number");
-  sectionNumber2.classList.remove("pulse-number");
-  sectionNumber3.classList.add("pulse-number");
-  sectionNumber4.classList.remove("pulse-number");
-
   var section = document.getElementById("team");
   section.style.display = "block";
 
@@ -121,11 +111,6 @@ function showTeam() {
   }
 }
 function showGallery() {
-  sectionNumber1.classList.remove("pulse-number");
-  sectionNumber2.classList.remove("pulse-number");
-  sectionNumber3.classList.remove("pulse-number");
-  sectionNumber4.classList.add("pulse-number");
-
   var section = document.getElementById("gallery");
   section.style.display = "block";
 
