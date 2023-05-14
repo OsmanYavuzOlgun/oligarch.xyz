@@ -9,19 +9,17 @@ setTimeout(function () {
   var sectionSidebar = document.querySelectorAll(
     ".click-open-section, .header"
   );
-  var introduction = document.querySelectorAll(
-    ".introduction"
-  );
-/*   var boomsAnimation = document.querySelectorAll(
+  var introduction = document.querySelectorAll(".introduction");
+  /*   var boomsAnimation = document.querySelectorAll(
     ".all-booms"
   ); */
   console.log(introduction);
   for (let i = 0; i < sectionSidebar.length; i++) {
     sectionSidebar[i].style.display = "block";
     introduction[i].style.display = "block";
-   /*  boomsAnimation[i].style.display = "block"; */
+    /*  boomsAnimation[i].style.display = "block"; */
   }
-}, 3500);
+}, 200);
 
 var transition = 40;
 var dots = 12;
@@ -120,5 +118,16 @@ function showGallery() {
   console.log(otherSections);
   for (var i = 0; i < otherSections.length; i++) {
     otherSections[i].style.display = "none";
+  }
+}
+
+var lightShift = document.getElementById("light");
+var body = document.getElementById("all-body");
+
+function light() {
+  if (lightShift.checked) {
+    body.classList.add("light-vision");
+  } else {
+    body.classList.remove("light-vision");
   }
 }
