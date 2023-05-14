@@ -16,7 +16,7 @@
       <div class="container">
         <div class="navbar">
           <a class="navlogo" readonly>fortis fortuna adiuvat</a>
-          <button class="hamburger">
+          <!--   <button class="hamburger">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -30,14 +30,41 @@
             >
               <path d="M3 12h18M3 6h18M3 18h18" />
             </svg>
-          </button>
+          </button> -->
           <div class="navlinkwrap">
             <span onclick="showIntroduction()" class="navlink selectedlink"
               >About</span
             >
             <span onclick="showAuction()" class="navlink">Lore</span>
             <span onclick="showTeam()" class="navlink">Gallery</span>
+            <span class="navlink">
+              <div class="toggleSwitch">
+                <label class="switch">
+                  <input type="checkbox" id="light" onClick="light()" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </span>
           </div>
+
+          <!--   <div class="flex-header navlinkwrap">
+            <div class="left-header">
+              <div class="fortis">fortis fortuna adiuvat</div>
+            </div>
+            <div class="right-header">
+              <div onclick="showIntroduction()" class="navlink selectedlink">
+                About
+              </div>
+              <div onclick="showAuction()" class="navlink">Lore</div>
+              <div onclick="showTeam()" class="navlink">Gallery</div>
+              <div class="toggleSwitch">
+                <label  class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -49,7 +76,7 @@
     </div>
   </div>
   <main>
-    <body>
+    <body id="all-body">
       <div class="all-sections">
         <!-- <section class="click-open-section activateAnim" id="sidebar">
             <div class="continer">
@@ -117,8 +144,8 @@
             </div>
           </section> -->
 
-          <!-- for now there is no animation -->
-     <!--    <div class="all-booms">
+        <!-- for now there is no animation -->
+        <!--    <div class="all-booms">
           <div class="boom-container">
             <div class="shape circle big white"></div>
             <div class="shape circle white"></div>
@@ -149,7 +176,7 @@
         <section class="introduction" id="introduction">
           <div class="container">
             <div class="box">
-              <div class="infobox ">
+              <div class="infobox">
                 <h1 class="infobox-boldtext">OLIGARCH</h1>
                 <p class="infobox-slimtext">
                   Oligarch is an exclusive organisation that brings together

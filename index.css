@@ -12,6 +12,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   overflow: hidden;
+  transition: 0.8s;
 }
 
 header .header {
@@ -26,9 +27,76 @@ header .header .navbar {
   max-width: 1715px;
   margin: 0 auto;
 }
+header .flex-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px 0 20px;
+}
+header .flex-header .fortis {
+  height: 100%;
+  color: white;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+header .flex-header .right-header {
+  display: flex;
+  align-items: center;
+}
+header .flex-header .right-header .switch {
+  width: 48px;
+  height: 28px;
+  position: relative;
+  display: inline-block;
+}
+header .flex-header .right-header .switch input {
+  display: none;
+}
+header .flex-header .right-header .switch input:checked ~ .slider {
+  border: 1px solid #000;
+}
+header .flex-header .right-header .switch input:checked ~ .slider:before {
+  transform: translateX(20px);
+  background-color: #000;
+}
+header .flex-header .right-header .switch .slider {
+  position: absolute;
+  border: 1px solid #fff;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.8s;
+  border-radius: 50px;
+}
+header .flex-header .right-header .switch .slider:before {
+  content: "";
+  background-color: #fff;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 5px;
+  left: 6px;
+  transition: 0.8s;
+  border-radius: 50%;
+}
 
 .hidden {
   display: none;
+}
+
+.navlinkwrap {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
 }
 
 #loading {
@@ -343,6 +411,97 @@ main .footer2 .copyright {
   font-size: 24px;
   cursor: pointer;
   letter-spacing: 2px;
+  padding-left: 20px;
+}
+.navbar .inputNightMorning {
+  position: absolute;
+  width: 150px;
+  height: 70px;
+  z-index: 999;
+  left: calc(50% - 75px);
+  top: calc(50% - 35px);
+  opacity: 0;
+}
+.navbar .inputNightMorning:checked ~ .wrap .toggle {
+  transition-delay: 0.5s;
+  transform: translateX(80px) rotate(360deg);
+}
+.navbar .inputNightMorning:checked ~ .wrap .outer .ball {
+  animation: bounce 2s ease-in-out 1 forwards;
+}
+.navbar .wrap {
+  width: 150px;
+  height: 70px;
+  position: relative;
+  border-radius: 100px;
+  box-shadow: 0 0 0 5px #000, 0 0 0 10px #fff;
+  background: #fff;
+}
+.navbar .toggle {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transition: 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.125);
+}
+.navbar .outer {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 5px #000, 0 0 0 5px #000;
+  border-radius: 100%;
+  top: 0;
+  left: 0;
+}
+.navbar .outer .line {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #fff 50%, #000 50%);
+  border-radius: 100%;
+}
+.navbar .outer .ball {
+  position: absolute;
+  width: 50%;
+  height: 10px;
+  top: calc(50% - 10px);
+  left: 0;
+  border-radius: 150% 150% 0 0/300% 300% 0 0;
+  background: #fff;
+  mix-blend-mode: difference;
+  transform-origin: bottom;
+  transform: scaleY(0) skewX(40deg);
+}
+.navbar .outer .ball:nth-of-type(2) {
+  left: auto;
+  right: 0;
+  top: 50%;
+  border-radius: 0 0 150% 150%/0 0 300% 300%;
+  transform-origin: top;
+}
+@keyframes bounce {
+  25% {
+    transform: scaleY(-1.5) skewX(40deg);
+  }
+  55% {
+    transform: scaleY(1.5) skewX(60deg);
+  }
+  60% {
+    transform: scaleY(0) skewX(40deg);
+  }
+  66% {
+    transform: scaleY(-0.75) skewX(70deg);
+  }
+  72% {
+    transform: scaleY(0) skewX(40deg);
+  }
+  100% {
+    transform: scaleY(0) skewX(40deg);
+  }
 }
 .navbar .navlink {
   font-style: normal;
@@ -351,8 +510,49 @@ main .footer2 .copyright {
   color: #f3eeee;
   cursor: pointer;
 }
+.navbar .navlink .switch {
+  width: 48px;
+  height: 28px;
+  position: relative;
+  display: inline-block;
+}
+.navbar .navlink .switch input {
+  display: none;
+}
+.navbar .navlink .switch input:checked ~ .slider {
+  border: 1px solid #000;
+}
+.navbar .navlink .switch input:checked ~ .slider:before {
+  transform: translateX(20px);
+  background-color: #000;
+}
+.navbar .navlink .switch .slider {
+  position: absolute;
+  border: 1px solid #fff;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.8s;
+  border-radius: 50px;
+}
+.navbar .navlink .switch .slider:before {
+  content: "";
+  background-color: #fff;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 5px;
+  left: 6px;
+  transition: 0.8s;
+  border-radius: 50%;
+}
 .navbar .navlink:hover {
   border-bottom: 1.5px solid #9b51e0;
+}
+.navbar .navlink:hover:nth-of-type(4) {
+  border: none;
 }
 .navbar .navlink.selectedlink {
   background: linear-gradient(93.51deg, #9b51e0 2.84%, #3081ed 99.18%);
@@ -757,6 +957,14 @@ main .footer2 .copyright {
   margin-right: 5px;
 }
 
+.light-vision {
+  background-color: white;
+  transition: 0.8s;
+}
+.light-vision .box .infobox-boldtext {
+  color: #000000;
+}
+
 @media screen and (max-width: 1500px) {
   .landingpage {
     max-width: 1200px;
@@ -972,52 +1180,52 @@ main .footer2 .copyright {
   background-color: white;
 }
 .sky-stars .dot:nth-child(1) {
-  top: 85%;
-  left: 91%;
+  top: 11%;
+  left: 72%;
 }
 .sky-stars .dot:nth-child(2) {
-  top: 26%;
-  left: 89%;
+  top: 76%;
+  left: 43%;
 }
 .sky-stars .dot:nth-child(3) {
-  top: 49%;
-  left: 89%;
+  top: 85%;
+  left: 12%;
 }
 .sky-stars .dot:nth-child(4) {
-  top: 29%;
-  left: 21%;
+  top: 48%;
+  left: 66%;
 }
 .sky-stars .dot:nth-child(5) {
-  top: 88%;
-  left: 80%;
+  top: 14%;
+  left: 81%;
 }
 .sky-stars .dot:nth-child(6) {
-  top: 43%;
-  left: 89%;
+  top: 18%;
+  left: 60%;
 }
 .sky-stars .dot:nth-child(7) {
-  top: 63%;
+  top: 85%;
   left: 6%;
 }
 .sky-stars .dot:nth-child(8) {
   top: 35%;
-  left: 89%;
+  left: 74%;
 }
 .sky-stars .dot:nth-child(9) {
-  top: 56%;
-  left: 25%;
+  top: 49%;
+  left: 52%;
 }
 .sky-stars .dot:nth-child(10) {
-  top: 78%;
-  left: 58%;
+  top: 45%;
+  left: 37%;
 }
 .sky-stars .dot:nth-child(11) {
-  top: 44%;
-  left: 43%;
+  top: 39%;
+  left: 90%;
 }
 .sky-stars .dot:nth-child(12) {
-  top: 13%;
-  left: 9%;
+  top: 67%;
+  left: 63%;
 }
 .sky-stars .dot--blinking {
   animation: blink 12.25s linear infinite;
