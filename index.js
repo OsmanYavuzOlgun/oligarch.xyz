@@ -21,6 +21,11 @@ setTimeout(function () {
   }
 }, 200);
 
+function toggleMenu() {
+  const menuItems = document.getElementById("menuItems");
+  menuItems.classList.toggle('show');
+}
+
 var transition = 40;
 var dots = 12;
 var lgStars = 2;
@@ -123,11 +128,16 @@ function showGallery() {
 
 var lightShift = document.getElementById("light");
 var body = document.getElementById("all-body");
+var hamburger = document.getElementById("hamburger");
 
 function light() {
   if (lightShift.checked) {
     body.classList.add("light-vision");
+    hamburger.classList.add('light');
+
   } else {
     body.classList.remove("light-vision");
+    hamburger.classList.remove('light');
+
   }
 }
