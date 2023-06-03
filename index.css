@@ -130,7 +130,6 @@ header .header .nav__toggle {
 
 .navlinkwrap {
   display: flex;
-  align-items: center;
   padding-right: 20px;
 }
 
@@ -539,6 +538,16 @@ main .footer2 .copyright {
     transform: scaleY(0) skewX(40deg);
   }
 }
+.navbar .images-nav:hover {
+  border: none !important;
+}
+.navbar .images-nav .social-icons:hover {
+  transform: scale(1.1);
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s ease;
+  box-shadow: 0 1.5px 0 0 #9b51e0;
+}
 .navbar .navlink {
   font-style: normal;
   font-weight: 500;
@@ -590,9 +599,13 @@ main .footer2 .copyright {
   }
 }
 .navbar .navlink:hover {
-  border-bottom: 1.5px solid #9b51e0;
+  border-bottom: 1px solid #9b51e0;
+  transform: scale(1.1);
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s ease;
 }
-.navbar .navlink:hover:nth-of-type(4) {
+.navbar .navlink:hover:last-child {
   border: none;
 }
 .navbar .navlink.selectedlink {
@@ -1222,6 +1235,9 @@ main .footer2 .copyright {
   flex-direction: row;
   transition: all 0.3s ease-in-out;
 }
+.navlinkwrap .social-icons {
+  width: 30px;
+}
 
 .navlinkwrap.show {
   flex-direction: column;
@@ -1430,52 +1446,52 @@ main .footer2 .copyright {
   background-color: white;
 }
 .sky-stars .dot:nth-child(1) {
-  top: 72%;
-  left: 89%;
+  top: 6%;
+  left: 36%;
 }
 .sky-stars .dot:nth-child(2) {
-  top: 90%;
-  left: 61%;
+  top: 53%;
+  left: 94%;
 }
 .sky-stars .dot:nth-child(3) {
-  top: 32%;
-  left: 67%;
+  top: 81%;
+  left: 92%;
 }
 .sky-stars .dot:nth-child(4) {
-  top: 38%;
-  left: 13%;
+  top: 32%;
+  left: 74%;
 }
 .sky-stars .dot:nth-child(5) {
-  top: 6%;
-  left: 83%;
+  top: 10%;
+  left: 54%;
 }
 .sky-stars .dot:nth-child(6) {
-  top: 55%;
-  left: 65%;
+  top: 5%;
+  left: 97%;
 }
 .sky-stars .dot:nth-child(7) {
-  top: 42%;
-  left: 37%;
+  top: 72%;
+  left: 19%;
 }
 .sky-stars .dot:nth-child(8) {
-  top: 16%;
-  left: 66%;
+  top: 79%;
+  left: 32%;
 }
 .sky-stars .dot:nth-child(9) {
-  top: 56%;
-  left: 11%;
+  top: 45%;
+  left: 10%;
 }
 .sky-stars .dot:nth-child(10) {
-  top: 52%;
-  left: 4%;
+  top: 49%;
+  left: 34%;
 }
 .sky-stars .dot:nth-child(11) {
-  top: 30%;
-  left: 59%;
+  top: 7%;
+  left: 33%;
 }
 .sky-stars .dot:nth-child(12) {
-  top: 47%;
-  left: 35%;
+  top: 85%;
+  left: 25%;
 }
 .sky-stars .dot--blinking {
   animation: blink 12.25s linear infinite;

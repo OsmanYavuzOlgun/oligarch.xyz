@@ -19,7 +19,7 @@ setTimeout(function () {
     introduction[i].style.display = "block";
     /*  boomsAnimation[i].style.display = "block"; */
   }
-}, 200);
+}, 100);
 
 function toggleMenu() {
   const menuItems = document.getElementById("menuItems");
