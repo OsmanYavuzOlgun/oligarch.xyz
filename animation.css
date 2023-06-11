@@ -23,52 +23,52 @@
   background-color: white;
 }
 .sky-stars .dot:nth-child(1) {
-  top: 31%;
-  left: 33%;
+  top: 57%;
+  left: 65%;
 }
 .sky-stars .dot:nth-child(2) {
-  top: 25%;
-  left: 44%;
+  top: 35%;
+  left: 4%;
 }
 .sky-stars .dot:nth-child(3) {
-  top: 8%;
-  left: 41%;
-}
-.sky-stars .dot:nth-child(4) {
-  top: 88%;
-  left: 48%;
-}
-.sky-stars .dot:nth-child(5) {
-  top: 87%;
-  left: 67%;
-}
-.sky-stars .dot:nth-child(6) {
-  top: 28%;
-  left: 40%;
-}
-.sky-stars .dot:nth-child(7) {
-  top: 46%;
-  left: 96%;
-}
-.sky-stars .dot:nth-child(8) {
-  top: 86%;
-  left: 76%;
-}
-.sky-stars .dot:nth-child(9) {
-  top: 42%;
-  left: 54%;
-}
-.sky-stars .dot:nth-child(10) {
-  top: 17%;
+  top: 12%;
   left: 59%;
 }
+.sky-stars .dot:nth-child(4) {
+  top: 39%;
+  left: 43%;
+}
+.sky-stars .dot:nth-child(5) {
+  top: 79%;
+  left: 69%;
+}
+.sky-stars .dot:nth-child(6) {
+  top: 59%;
+  left: 51%;
+}
+.sky-stars .dot:nth-child(7) {
+  top: 12%;
+  left: 31%;
+}
+.sky-stars .dot:nth-child(8) {
+  top: 56%;
+  left: 73%;
+}
+.sky-stars .dot:nth-child(9) {
+  top: 78%;
+  left: 43%;
+}
+.sky-stars .dot:nth-child(10) {
+  top: 74%;
+  left: 65%;
+}
 .sky-stars .dot:nth-child(11) {
-  top: 13%;
-  left: 66%;
+  top: 40%;
+  left: 40%;
 }
 .sky-stars .dot:nth-child(12) {
-  top: 63%;
-  left: 50%;
+  top: 31%;
+  left: 74%;
 }
 .sky-stars .dot--blinking {
   animation: blink 12.25s linear infinite;
