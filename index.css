@@ -303,6 +303,22 @@ main section.click-open-section hr {
     opacity: 0.5;
   }
 }
+@keyframes pulse-img {
+  0% {
+    box-shadow: #ddff00 0 0 0 0;
+  }
+  75% {
+    box-shadow: rgba(255, 105, 180, 0) 0 0 0 16px;
+  }
+}
+@keyframes pulse-img2 {
+  0% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+}
 @keyframes skul {
   0% {
     opacity: 0.05;
@@ -949,15 +965,119 @@ main .footer2 .copyright {
   color: #828282;
 }
 
-.item-wrapper {
+.pulse {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.pulse .pulse-anim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  animation: pulse-img 2s infinite;
+  background-color: #ddff00;
+}
+.pulse .pulse-anim .pulse-anim-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 20px;
+  animation: pulse-img2 1.8s infinite;
 }
 
+.item-wrapper {
+  display: flex;
+  transition: 2s ease-in;
+  animation: fade-out 2s linear;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.item-wrapper:not(.hidden-item) {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hidden-item {
+  display: none !important;
+}
+
+.load-more-but {
+  margin: 20px auto;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  width: 180px;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #4f054b;
+  background-image: linear-gradient(45deg, #81094b 0%, #4f054b 51%, #81094b 100%);
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  touch-action: manipulation;
+  position: relative;
+  border: 1px solid rgba(231, 231, 231, 0.3294117647);
+}
+.load-more-but .button-text {
+  visibility: visible;
+}
+.load-more-but:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.load-more-but:active {
+  transform: scale(0.95);
+}
+.load-more-but::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+  display: none;
+  transform: translate(-50%, -50%);
+}
+.load-more-but.loading {
+  background-color: #ddd;
+}
+.load-more-but.loading .button-text {
+  visibility: hidden;
+}
+.load-more-but.loading::after {
+  display: block;
+}
+
+@keyframes spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
 .auction-sec {
   width: initial !important;
   max-width: initial !important;
   animation-name: normalfade;
   animation-duration: 2.2s;
+  overflow-y: hidden;
 }
 .auction-sec img {
   max-width: 100%;
@@ -1419,6 +1539,33 @@ main .footer2 .copyright {
 .light-vision .discover .item-date {
   color: #000000;
 }
+.light-vision .pulse .pulse-anim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  animation: pulse-img 2s infinite;
+  background-color: #ddff00;
+}
+.light-vision .pulse .pulse-anim .pulse-anim-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  animation: pulse-img2 1.8s infinite;
+}
+.light-vision .ag-timeline_line-progress {
+  width: 100%;
+  height: 20%;
+  background-color: yellow;
+}
+.light-vision .ag-timeline_line {
+  border: 1px solid rgba(0, 0, 0, 0.44);
+}
+.light-vision .js-ag-active .ag-timeline-card_point {
+  background-color: #fcff00;
+}
 
 @media screen and (max-width: 1500px) {
   .landingpage {
@@ -1741,52 +1888,52 @@ main .footer2 .copyright {
   background-color: white;
 }
 .sky-stars .dot:nth-child(1) {
-  top: 68%;
-  left: 23%;
+  top: 59%;
+  left: 67%;
 }
 .sky-stars .dot:nth-child(2) {
-  top: 67%;
+  top: 84%;
   left: 32%;
 }
 .sky-stars .dot:nth-child(3) {
-  top: 35%;
-  left: 2%;
+  top: 2%;
+  left: 50%;
 }
 .sky-stars .dot:nth-child(4) {
-  top: 85%;
-  left: 39%;
+  top: 58%;
+  left: 6%;
 }
 .sky-stars .dot:nth-child(5) {
-  top: 86%;
-  left: 8%;
+  top: 26%;
+  left: 66%;
 }
 .sky-stars .dot:nth-child(6) {
-  top: 38%;
-  left: 9%;
+  top: 56%;
+  left: 97%;
 }
 .sky-stars .dot:nth-child(7) {
-  top: 1%;
-  left: 64%;
+  top: 86%;
+  left: 58%;
 }
 .sky-stars .dot:nth-child(8) {
-  top: 8%;
-  left: 34%;
+  top: 73%;
+  left: 50%;
 }
 .sky-stars .dot:nth-child(9) {
-  top: 12%;
-  left: 68%;
+  top: 14%;
+  left: 6%;
 }
 .sky-stars .dot:nth-child(10) {
-  top: 30%;
-  left: 93%;
+  top: 28%;
+  left: 2%;
 }
 .sky-stars .dot:nth-child(11) {
-  top: 60%;
-  left: 35%;
+  top: 55%;
+  left: 34%;
 }
 .sky-stars .dot:nth-child(12) {
-  top: 52%;
-  left: 63%;
+  top: 82%;
+  left: 24%;
 }
 .sky-stars .dot--blinking {
   animation: blink 12.25s linear infinite;
