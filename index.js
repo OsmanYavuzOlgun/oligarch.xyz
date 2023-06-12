@@ -140,6 +140,41 @@ function light() {
   }
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+  var wrappersMax = 5;
+  var wrappers = document.querySelectorAll(".item-wrapper");
+  var loadMoreButton = document.getElementById("load-more");
+
+  for (var i = 0; i < wrappers.length; i++) {
+    if (i >= wrappersMax) {
+      wrappers[i].classList.add('hidden-item');
+    } else {
+      wrappers[i].classList.remove('hidden-item');
+    }
+  }
+
+  loadMoreButton.addEventListener("click", function() {
+    loadMoreButton.classList.add('loading');
+    setTimeout(function() {
+      loadMoreButton.classList.remove('loading');
+
+      var hiddenWrappers = document.querySelectorAll('.item-wrapper.hidden-item');
+      var loadMoreCount = 4;
+
+      for (var i = 0; i < loadMoreCount; i++) {
+        if (hiddenWrappers[i] !== undefined) {
+          hiddenWrappers[i].classList.remove('hidden-item');
+        }
+      }
+
+      // hide the button when there are no more items to show
+      if (document.querySelectorAll('.item-wrapper.hidden-item').length == 0) {
+        loadMoreButton.style.display = 'none';
+      }
+    }, 1000); // simulate a delay of 1 second
+  });
+});
+
 (function ($) {
   $(function () {
 
