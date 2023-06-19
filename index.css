@@ -4,10 +4,11 @@
 @import url("https://fonts.cdnfonts.com/css/templo-kolegio");
 @import url("https://fonts.cdnfonts.com/css/venice-classic");
 @import url("https://fonts.cdnfonts.com/css/jupiter-crash");
+@import url("https://fonts.cdnfonts.com/css/alkhemikal");
 body {
   margin: 0;
   background-color: #000000;
-  font-family: "Jupiter Crash BRK", sans-serif;
+  font-family: "Alkhemikal", sans-serif;
   height: 100%;
   padding: 0;
   box-sizing: border-box;
@@ -118,6 +119,10 @@ header .header .nav__toggle {
   }
   header .header .nav__toggle {
     display: block;
+    display: flex !important;
+    /* align-items: center; */
+    justify-content: flex-end;
+    width: 100%;
   }
   header .header .navlinkwrap.show {
     display: flex;
@@ -1072,6 +1077,19 @@ main .footer2 .copyright {
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
+.fortis {
+  font-size: 48px !important;
+  margin-bottom: 148px !important;
+}
+
+.oli-text {
+  max-width: 1086px !important;
+}
+
+.marginImg {
+  margin-bottom: 8px !important;
+}
+
 .auction-sec {
   width: initial !important;
   max-width: initial !important;
@@ -1668,11 +1686,70 @@ main .footer2 .copyright {
   display: flex;
   flex-direction: row;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 .navlinkwrap .social-icons {
   width: 30px;
 }
 
+.main-spans {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.others {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* float: right; */
+  text-align: right;
+}
+
+.navbar {
+  position: relative;
+}
+
+.navlinkwrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-spans {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.others {
+  position: absolute;
+  right: 0;
+  display: flex;
+}
+.others .social-icons {
+  width: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .navlinkwrap {
+    flex-direction: column;
+    align-items: center;
+    right: 30px;
+  }
+  .main-spans {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .others {
+    position: static;
+    margin-top: 20px;
+    flex-direction: column;
+  }
+}
 .navlinkwrap.show {
   flex-direction: column;
 }
@@ -1684,6 +1761,7 @@ main .footer2 .copyright {
   }
   .navlinkwrap.show {
     display: flex;
+    max-width: 130px;
   }
   .navlinkwrap span {
     margin-right: 0;
@@ -1888,52 +1966,52 @@ main .footer2 .copyright {
   background-color: white;
 }
 .sky-stars .dot:nth-child(1) {
-  top: 59%;
-  left: 67%;
-}
-.sky-stars .dot:nth-child(2) {
-  top: 84%;
-  left: 32%;
-}
-.sky-stars .dot:nth-child(3) {
-  top: 2%;
-  left: 50%;
-}
-.sky-stars .dot:nth-child(4) {
-  top: 58%;
-  left: 6%;
-}
-.sky-stars .dot:nth-child(5) {
-  top: 26%;
-  left: 66%;
-}
-.sky-stars .dot:nth-child(6) {
-  top: 56%;
-  left: 97%;
-}
-.sky-stars .dot:nth-child(7) {
-  top: 86%;
-  left: 58%;
-}
-.sky-stars .dot:nth-child(8) {
-  top: 73%;
-  left: 50%;
-}
-.sky-stars .dot:nth-child(9) {
-  top: 14%;
-  left: 6%;
-}
-.sky-stars .dot:nth-child(10) {
-  top: 28%;
-  left: 2%;
-}
-.sky-stars .dot:nth-child(11) {
-  top: 55%;
+  top: 79%;
   left: 34%;
 }
+.sky-stars .dot:nth-child(2) {
+  top: 25%;
+  left: 25%;
+}
+.sky-stars .dot:nth-child(3) {
+  top: 48%;
+  left: 82%;
+}
+.sky-stars .dot:nth-child(4) {
+  top: 47%;
+  left: 19%;
+}
+.sky-stars .dot:nth-child(5) {
+  top: 37%;
+  left: 29%;
+}
+.sky-stars .dot:nth-child(6) {
+  top: 89%;
+  left: 74%;
+}
+.sky-stars .dot:nth-child(7) {
+  top: 31%;
+  left: 50%;
+}
+.sky-stars .dot:nth-child(8) {
+  top: 21%;
+  left: 19%;
+}
+.sky-stars .dot:nth-child(9) {
+  top: 67%;
+  left: 47%;
+}
+.sky-stars .dot:nth-child(10) {
+  top: 53%;
+  left: 94%;
+}
+.sky-stars .dot:nth-child(11) {
+  top: 64%;
+  left: 52%;
+}
 .sky-stars .dot:nth-child(12) {
-  top: 82%;
-  left: 24%;
+  top: 42%;
+  left: 49%;
 }
 .sky-stars .dot--blinking {
   animation: blink 12.25s linear infinite;

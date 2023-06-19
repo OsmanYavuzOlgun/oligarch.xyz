@@ -8,51 +8,54 @@
   </head>
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="animation.css" />
-
+  <link href="https://fonts.cdnfonts.com/css/alkhemikal" rel="stylesheet" />
   <link href="https://fonts.cdnfonts.com/css/circular-std" rel="stylesheet" />
-
   <header>
     <section class="header activateAnim">
       <div class="container">
         <div class="navbar">
-          <a class="navlogo" readonly>fortis fortuna adiuvat</a>
           <div class="nav__toggle">
             <button class="hamburger" id="hamburger" onclick="toggleMenu()">
               &#9776;
             </button>
           </div>
           <div class="navlinkwrap" id="menuItems">
-            <span onclick="showIntroduction()" class="navlink selectedlink"
-              >About</span
-            >
-            <span onclick="showAuction()" class="navlink">Lore</span>
-            <span onclick="showTeam()" class="navlink">Gallery</span>
-            <a class="navlink images-nav">
-              <img
-                class="social-icons"
-                src="images/twitter.png"
-                alt="twitter"
-              />
-            </a>
-            <a class="navlink images-nav">
-              <img
-                class="social-icons"
-                src="images/discord.png"
-                alt="discord"
-              />
-            </a>
-            <span class="navlink">
-              <div class="toggleSwitch">
-                <label class="switch">
-                  <input type="checkbox" id="light" onClick="light()" />
-                  <span class="slider"></span>
-                </label>
-              </div>
-            </span>
+            <div class="main-spans">
+              <span onclick="showIntroduction()" class="navlink selectedlink"
+                >About</span
+              >
+              <span onclick="showAuction()" class="navlink">Lore</span>
+              <span onclick="showTeam()" class="navlink">Gallery</span>
+            </div>
+            <div class="others">
+              <a class="navlink images-nav">
+                <img
+                  class="social-icons"
+                  src="images/twitter.png"
+                  alt="twitter"
+                />
+              </a>
+              <a class="navlink images-nav">
+                <img
+                  class="social-icons"
+                  src="images/discord.png"
+                  alt="discord"
+                />
+              </a>
+              <span class="navlink">
+                <div class="toggleSwitch">
+                  <label class="switch">
+                    <input type="checkbox" id="light" onClick="light()" />
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </span>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    
   </header>
 
   <div id="loading">
@@ -163,8 +166,13 @@
           <div class="container">
             <div class="box">
               <div class="infobox">
-                <h1 class="infobox-boldtext">OLIGARCH</h1>
-                <p class="infobox-slimtext">
+                <div class="infobox-boldtext marginImg">
+                  <img src="images/olimain.png" alt="Oligarch Main" />
+                </div>
+                <div class="infobox-boldtext fortis">
+                  Fortis fortuna adiuvat.
+                </div>
+                <p class="infobox-slimtext oli-text">
                   Oligarch is an exclusive organisation that brings together
                   highly driven individuals with unique skill sets who are
                   determined to succeed and achieve their goals. As a community,
