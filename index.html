@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="animation.css" />
   <link href="https://fonts.cdnfonts.com/css/alkhemikal" rel="stylesheet" />
   <link href="https://fonts.cdnfonts.com/css/circular-std" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="sword.png">
+
   <header>
     <section class="header activateAnim">
       <div class="container">
@@ -28,21 +30,28 @@
               <span onclick="showTeam()" class="navlink">Gallery</span>
             </div>
             <div class="others">
-              <a class="navlink images-nav">
+              <a class="navlink navlin2 images-nav">
                 <img
                   class="social-icons"
-                  src="images/twitter.png"
+                  src="images/magicedenpng.png"
                   alt="twitter"
                 />
               </a>
-              <a class="navlink images-nav">
+              <a class="navlink navlin2 images-nav">
                 <img
                   class="social-icons"
-                  src="images/discord.png"
+                  src="images/twitterlogo.png"
+                  alt="twitter"
+                />
+              </a>
+              <a class="navlink navlin2 images-nav">
+                <img
+                  class="social-icons"
+                  src="images/discordlogo.png"
                   alt="discord"
                 />
               </a>
-              <span class="navlink">
+              <span class="navlink navlin2">
                 <div class="toggleSwitch">
                   <label class="switch">
                     <input type="checkbox" id="light" onClick="light()" />
@@ -55,7 +64,6 @@
         </div>
       </div>
     </section>
-    
   </header>
 
   <div id="loading">
@@ -67,107 +75,16 @@
   <main>
     <body id="all-body">
       <div class="all-sections">
-        <!-- <section class="click-open-section activateAnim" id="sidebar">
-            <div class="continer">
-              <div class="sidebar">
-                <div class="contents">
-                  <div
-                    class="sidebar-item about-sidebar"
-                    onclick="showIntroduction()"
-                    id="about-sidebar"
-                  >
-                    <div class="sidebar-left">
-                      <p class="title">About</p>
-                      <p class="sub-title">XXX</p>
-                    </div>
-                    <div class="sidebar-right">
-                      <p class="section-number" id="numberOne">1</p>
-                    </div>
-                  </div>
-                  <div class="processing"></div>
-                  <div
-                    class="sidebar-item"
-                    onclick="showAuction()"
-                    id="auction-sidebar"
-                  >
-                    <div class="sidebar-left">
-                      <p class="title">Auction</p>
-                      <p class="sub-title">XXX</p>
-                    </div>
-                    <div class="sidebar-right">
-                      <p class="section-number" id="numberTwo">2</p>
-                    </div>
-                  </div>
-                  <div class="processing"></div>
-
-                  <div
-                    class="sidebar-item"
-                    onclick="showTeam()"
-                    id="team-sidebar"
-                  >
-                    <div class="sidebar-left">
-                      <p class="title">Team</p>
-                      <p class="sub-title">XXX</p>
-                    </div>
-                    <div class="sidebar-right">
-                      <p class="section-number" id="numberThree">3</p>
-                    </div>
-                  </div>
-                  <div class="processing"></div>
-                  <div
-                    class="sidebar-item"
-                    onclick="showGallery()"
-                    id="gallery-sidebar"
-                  >
-                    <div class="sidebar-left">
-                      <p class="title">Team</p>
-                      <p class="sub-title">XXX</p>
-                    </div>
-                    <div class="sidebar-right">
-                      <p class="section-number" id="numberFour">4</p>
-                    </div>
-                  </div>
-                  <div class="processing"></div>
-                </div>
-              </div>
-            </div>
-          </section> -->
-
-        <!-- for now there is no animation -->
-        <!--    <div class="all-booms">
-          <div class="boom-container">
-            <div class="shape circle big white"></div>
-            <div class="shape circle white"></div>
-            <div class="shape triangle big yellow"></div>
-            <div class="shape disc white"></div>
-            <div class="shape triangle blue"></div>
-          </div>
-          <div class="boom-container second">
-            <div class="shape circle big white"></div>
-            <div class="shape circle white"></div>
-            <div class="shape disc white"></div>
-            <div class="shape triangle blue"></div>
-          </div>
-          <div class="boom-container third">
-            <div class="shape circle big white"></div>
-            <div class="shape circle white"></div>
-            <div class="shape disc white"></div>
-            <div class="shape triangle blue"></div>
-          </div>
-          <div class="boom-container fourth">
-            <div class="shape circle big white"></div>
-            <div class="shape circle white"></div>
-            <div class="shape disc white"></div>
-            <div class="shape triangle blue"></div>
-          </div>
-        </div> -->
-
         <section class="introduction" id="introduction">
           <div class="container">
             <div class="box">
               <div class="infobox">
                 <div class="infobox-boldtext marginImg">
-                  <img src="images/olimain.png" alt="Oligarch Main" />
+                  <img
+                    class="olimainimage"
+                    src="images/olimain.png"
+                    alt="Oligarch Main"
+                  />
                 </div>
                 <div class="infobox-boldtext fortis">
                   Fortis fortuna adiuvat.
@@ -181,52 +98,7 @@
                   vision, and unity to its members, allowing them to rise with
                   respect and dignity.
                 </p>
-                <!--  <div class="infobox-btnwrapper">
-                  <button class="infobox-explorebtn selected">Explore</button>
-                  <button class="infobox-createbtn">Explore</button>
-                </div> -->
               </div>
-              <!--    <div class="display column">
-                <img
-                  class="display-nft"
-                  src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-                  alt="unsplash-OG44d93i-NJk"
-                  border="0"
-                />
-                <div class="infowrapper">
-                  <div class="info">
-                    <img
-                      class="info-img"
-                      src="https://images.unsplash.com/photo-1535207010348-71e47296838a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=385&q=80"
-                      alt="unsplash-OG44d93i-NJk"
-                      border="0"
-                    />
-                    <div>
-                      <p>Laura</p>
-                      <p>0.21 Weth</p>
-                    </div>
-                  </div>
-                  <div class="info2">
-                    <p class="info-sub">WE ARE HERE</p>
-                    <div class="iconwrapper">
-                      <svg
-                        width="22"
-                        height="20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M5.7365 2C3.6575 2 1.5 3.8804 1.5 6.5135c0 3.1074 2.3236 5.9603 4.8612 8.1207 1.2458 1.0606 2.4954 1.9137 3.4352 2.5022.4692.2937.8593.5203 1.1305.6727L11 17.85l.0731-.0409a27.984 27.984 0 0 0 1.1304-.6727c.9399-.5885 2.1895-1.4416 3.4353-2.5022C18.1764 12.4738 20.5 9.6209 20.5 6.5135 20.5 3.8805 18.3425 2 16.2635 2c-2.1054 0-3.8008 1.389-4.552 3.6426a.75.75 0 0 1-1.423 0C9.5373 3.389 7.8418 2 5.7365 2ZM11 18.7027l.3426.6672a.7502.7502 0 0 1-.6852 0L11 18.7027ZM0 6.5135C0 3.052 2.829.5 5.7365.5 8.0298.5 9.8808 1.7262 11 3.6048 12.1192 1.7262 13.9702.5 16.2635.5 19.171.5 22 3.052 22 6.5135c0 3.8183-2.8014 7.06-5.3888 9.2628-1.3167 1.121-2.6296 2.0166-3.6116 2.6314-.4918.308-.9025.5467-1.1918.7092a19.142 19.142 0 0 1-.4301.2347l-.0248.013-.007.0036-.0021.0011c-.0003.0001-.0012.0006-.3438-.6666-.3426.6672-.3424.6673-.3426.6672l-.0033-.0017-.007-.0036-.0248-.013a19.142 19.142 0 0 1-.4301-.2347 29.324 29.324 0 0 1-1.1918-.7092c-.982-.6148-2.295-1.5104-3.6116-2.6314C2.8014 13.5735 0 10.3318 0 6.5135Z"
-                          fill="#E0E0E0"
-                        />
-                      </svg>
-                      25
-                    </div>
-                  </div>
-                </div>
-              </div> -->
             </div>
           </div>
         </section>
@@ -367,7 +239,7 @@
           <div class="container">
             <div class="discover">
               <div class="discover-title">
-                <p>Discovery</p>
+                <p class="lore-margin-title">Gallery</p>
               </div>
               <div class="discover-items">
                 <div class="item-wrapper">
@@ -409,9 +281,7 @@
                       </p>
                     </div>
                   </div>
-                </div>
 
-                <div class="item-wrapper">
                   <div class="item">
                     <img class="item-img" src="images/gallery/Angelus.png" />
                     <div class="item-title">
@@ -460,9 +330,7 @@
                       </p>
                     </div>
                   </div>
-                </div>
 
-                <div class="item-wrapper">
                   <div class="item">
                     <img class="item-img" src="images/gallery/Lava.png" />
 
@@ -509,8 +377,6 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="item-wrapper">
                   <div class="item">
                     <img class="item-img" src="images/gallery/Minotaur.png" />
                     <div class="item-title">
@@ -558,8 +424,6 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="item-wrapper">
                   <div class="item">
                     <img class="item-img" src="images/gallery/atar.png" />
                     <div class="item-title">
@@ -605,9 +469,7 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="item-wrapper hidden-item">
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Andlát.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Andlát</p>
@@ -620,7 +482,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Raistlin.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Raistlin</p>
@@ -633,7 +495,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Commodus.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Commodus</p>
@@ -646,9 +508,7 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="item-wrapper hidden-item">
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Tuoni.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Tuoni</p>
@@ -662,7 +522,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Xemx.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Xemx</p>
@@ -678,7 +538,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Fukurokuju.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Fukurokuju</p>
@@ -693,9 +553,7 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="item-wrapper hidden-item">
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Gawain.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Gawain</p>
@@ -709,7 +567,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Heimdallr.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Heimdallr</p>
@@ -721,7 +579,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Hector.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Hector</p>
@@ -738,9 +596,7 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="item-wrapper hidden-item">
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Aerin.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Aerin</p>
@@ -756,7 +612,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Gorthaur.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Gorthaur</p>
@@ -772,7 +628,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Hadar.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Hadar</p>
@@ -786,9 +642,7 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="item-wrapper hidden-item">
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Mfalme.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Mfalme</p>
@@ -802,7 +656,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Balor.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Balor</p>
@@ -819,7 +673,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Svartr.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Svartr</p>
@@ -833,9 +687,7 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="item-wrapper hidden-item">
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Orodreth.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Orodreth</p>
@@ -848,7 +700,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Ernil.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Ernil</p>
@@ -863,7 +715,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Nuada.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Nuada</p>
@@ -877,9 +729,7 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="item-wrapper hidden-item">
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Fenrir.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Fenrir</p>
@@ -892,7 +742,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Hjalmar.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Hjalmar</p>
@@ -908,7 +758,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Ajax.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Ajax</p>
@@ -923,9 +773,7 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="item-wrapper hidden-item">
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Archambaud.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Archambaud</p>
@@ -939,7 +787,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Hayate.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Hayate</p>
@@ -952,7 +800,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Castor.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Castor</p>
@@ -966,9 +814,7 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="item-wrapper hidden-item">
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Zinariya.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Zinariya</p>
@@ -985,7 +831,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Spartan.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Grimmur</p>
@@ -998,7 +844,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Imperator.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Imperator</p>
@@ -1012,9 +858,7 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="item-wrapper hidden-item">
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Dauðamaðr.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Dauðamaðr</p>
@@ -1027,7 +871,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Menelaus.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Menelaus</p>
@@ -1039,7 +883,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Orrszarvú.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Orrszarvú</p>
@@ -1052,9 +896,7 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="item-wrapper hidden-item">
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Hunyon.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Hunyon</p>
@@ -1067,7 +909,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Trygve.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Trygve</p>
@@ -1080,7 +922,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Voras.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Voras</p>
@@ -1093,9 +935,7 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="item-wrapper hidden-item">
-                  <div class="item">
+                  <div class="item hidden-item">
                     <img class="item-img" src="images/gallery/Badak.png" />
                     <div class="item-title">
                       <p class="item-parag first-title">Badak</p>
@@ -1109,8 +949,6 @@
                       </p>
                     </div>
                   </div>
-                  <div class="item"></div>
-                  <div class="item"></div>
                 </div>
                 <button id="load-more" class="load-more-but">
                   <span class="button-text">Load More</span>
@@ -1119,149 +957,7 @@
             </div>
           </div>
         </section>
-
-        <!--  <section class="gallery" id="gallery">
-          <div class="container">
-            <div class="discover">
-              <div class="discover-title">
-                <p>Discover</p>
-              </div>
-              <div class="discover-items">
-                <div class="item">
-                  <img
-                    class="item-img"
-                    src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-                    alt="unsplash-OG44d93i-NJk"
-                    border="0"
-                  />
-                  <div class="item-title">
-                    <p>Lorem Ipsum</p>
-                    <p>1.20 Weth</p>
-                  </div>
-                </div>
-                <div class="item">
-                  <img
-                    class="item-img"
-                    src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-                    alt="unsplash-OG44d93i-NJk"
-                    border="0"
-                  />
-                  <div class="item-title">
-                    <p>Lorem Ipsum</p>
-                    <p>1.20 Weth</p>
-                  </div>
-                </div>
-                <div class="item">
-                  <img class="item-img"
-                  src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-                  " border=" 0">
-                  <div class="item-title">
-                    <p>Lorem Ipsum</p>
-                    <p>1.20 Weth</p>
-                  </div>
-                </div>
-                <div class="item">
-                  <img
-                    class="item-img"
-                    src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-                    alt="unsplash-OG44d93i-NJk"
-                    border="0"
-                  />
-                  <div class="item-title">
-                    <p>Lorem Ipsum</p>
-                    <p>1.20 Weth</p>
-                  </div>
-                </div>
-                <div class="item">
-                  <img
-                    class="item-img"
-                    src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-                    alt="unsplash-OG44d93i-NJk"
-                    border="0"
-                  />
-                  <div class="item-title">
-                    <p>Lorem Ipsum</p>
-                    <p>1.20 Weth</p>
-                  </div>
-                </div>
-                <div class="item">
-                  <img
-                    class="item-img"
-                    src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-                    alt="unsplash-OG44d93i-NJk"
-                    border="0"
-                  />
-                  <div class="item-title">
-                    <p>Lorem Ipsum</p>
-                    <p>1.20 Weth</p>
-                  </div>
-                </div>
-                <div class="item">
-                  <img
-                    class="item-img"
-                    src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-                    alt="unsplash-OG44d93i-NJk"
-                    border="0"
-                  />
-                  <div class="item-title">
-                    <p>Lorem Ipsum</p>
-                    <p>1.20 Weth</p>
-                  </div>
-                </div>
-                <div class="item">
-                  <img
-                    class="item-img"
-                    src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-                    alt="unsplash-OG44d93i-NJk"
-                    border="0"
-                  />
-                  <div class="item-title">
-                    <p>Lorem Ipsum</p>
-                    <p>1.20 Weth</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> -->
       </div>
-
-      <!--  <footer>
-            <section class="footer-bottom">
-                <div class="container">
-                    <div class="footer">
-                        <div class="footer-main">
-                            Etiam et id tincidunt faucibus mollis a sociis pretium fermentum quis magna faucibus lacus.
-                        </div>
-                        <div class="footer-navigate">
-                            <div class="nav">
-                                <h5>Marketplace</h5>
-                                <p>Home</p>
-                                <p>Activity</p>
-                                <p>Discover</p>
-                                <p>Learn more</p>
-                            </div>
-                            <div class="nav">
-                                <h5>Company</h5>
-                                <p>About Us</p>
-                                <p>Services</p>
-                                <p>Portfolio</p>
-                            </div>
-                            <div class="nav">
-                                <h5>Contact</h5>
-                                <p>Facebook</p>
-                                <p>Instagram</p>
-                                <p>Twitter</p>
-                                <p>Email</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer2">
-                        <p class="copyright">Copyright 2021 OLIGARCH</p>
-                    </div>
-                </div>
-            </section>
-        </footer> -->
     </body>
   </main>
 </html>

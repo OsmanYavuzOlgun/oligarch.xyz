@@ -141,8 +141,8 @@ function light() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  var wrappersMax = 5;
-  var wrappers = document.querySelectorAll(".item-wrapper");
+  var wrappersMax = 12;
+  var wrappers = document.querySelectorAll(".item");
   var loadMoreButton = document.getElementById("load-more");
 
   for (var i = 0; i < wrappers.length; i++) {
@@ -158,8 +158,8 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
       loadMoreButton.classList.remove('loading');
 
-      var hiddenWrappers = document.querySelectorAll('.item-wrapper.hidden-item');
-      var loadMoreCount = 4;
+      var hiddenWrappers = document.querySelectorAll('.item.hidden-item');
+      var loadMoreCount = 12;
 
       for (var i = 0; i < loadMoreCount; i++) {
         if (hiddenWrappers[i] !== undefined) {
@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
 
       // hide the button when there are no more items to show
-      if (document.querySelectorAll('.item-wrapper.hidden-item').length == 0) {
+      if (document.querySelectorAll('.item.hidden-item').length == 0) {
         loadMoreButton.style.display = 'none';
       }
     }, 1000); // simulate a delay of 1 second

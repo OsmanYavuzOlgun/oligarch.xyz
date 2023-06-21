@@ -1,0 +1,51 @@
+@media screen and (max-width: 991px) {
+  main section:not(.header):not(.footer-bottom) {
+    padding: 0;
+  }
+  .ag-timeline-card_point-box {
+    margin: 0 0 0 8px !important;
+  }
+  .auction-sec .adjust-bullet {
+    margin: 0 0 0 8px !important;
+  }
+  .team .discover .discover-items .item-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .ag-timeline-card_point-box {
+    margin: 0 0 0 8px !important;
+  }
+  .olimainimage {
+    width: 100%;
+    max-width: 440px;
+  }
+  .fortis {
+    font-size: 28px !important;
+  }
+  .oli-text {
+    max-width: 544px !important;
+    padding: 0 20px 0 20px;
+    font-size: 28px !important;
+  }
+}
+@media screen and (max-width: 520px) {
+  .ag-timeline_item {
+    margin: 0 0 150px !important;
+  }
+  .team .discover .discover-items .item-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 480px) {
+  .fortis {
+    font-size: 24px !important;
+  }
+  .oli-text {
+    max-width: 350px !important;
+    font-size: 24px !important;
+  }
+  .marginImg {
+    padding: 16px;
+  }
+}/*# sourceMappingURL=responsive.css.map */
