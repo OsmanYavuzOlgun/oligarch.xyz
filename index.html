@@ -3,15 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Discover Oligarch, the premier destination for unique NFTs embedded with deep lore. Explore our curated gallery of digital assets, where every NFT tells a story. Uncover immersive tales, invest in unparalleled art, and join a community of passionate collectors. Dive into the world of Oligarch today and become a part of the narrative"
+    />
+    <meta name="keywords" content="Oligarch, NFT, non fungible token, autez" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OLIGARCH</title>
   </head>
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="animation.css" />
   <link href="https://fonts.cdnfonts.com/css/alkhemikal" rel="stylesheet" />
-  <link href="https://fonts.cdnfonts.com/css/circular-std" rel="stylesheet" />
-  <link rel="icon" type="image/x-icon" href="sword.png">
-
+  <link rel="icon" type="image/x-icon" href="sword.png" />
   <header>
     <section class="header activateAnim">
       <div class="container">
@@ -23,28 +26,44 @@
           </div>
           <div class="navlinkwrap" id="menuItems">
             <div class="main-spans">
-              <span onclick="showIntroduction()" class="navlink selectedlink"
+              <span
+                tabindex="0"
+                onclick="showIntroduction()"
+                class="navlink selectedlink"
                 >About</span
               >
-              <span onclick="showAuction()" class="navlink">Lore</span>
-              <span onclick="showTeam()" class="navlink">Gallery</span>
+              <span tabindex="0" onclick="showAuction()" class="navlink"
+                >Lore</span
+              >
+              <span tabindex="0" onclick="showTeam()" class="navlink"
+                >Gallery</span
+              >
             </div>
             <div class="others">
-              <a class="navlink navlin2 images-nav">
+              <a
+                class="navlink navlin2 images-nav"
+                href="https://magiceden.io/marketplace/oligarch"
+              >
                 <img
                   class="social-icons"
                   src="images/magicedenpng.png"
-                  alt="twitter"
+                  alt="magiceden"
                 />
               </a>
-              <a class="navlink navlin2 images-nav">
+              <a
+                class="navlink navlin2 images-nav"
+                href="https://twitter.com/OligarchNFT"
+              >
                 <img
                   class="social-icons"
                   src="images/twitterlogo.png"
                   alt="twitter"
                 />
               </a>
-              <a class="navlink navlin2 images-nav">
+              <a
+                class="navlink navlin2 images-nav"
+                href="https://discord.gg/oligarch"
+              >
                 <img
                   class="social-icons"
                   src="images/discordlogo.png"
@@ -53,7 +72,7 @@
               </a>
               <span class="navlink navlin2">
                 <div class="toggleSwitch">
-                  <label class="switch">
+                  <label aria-label="light switch" class="switch">
                     <input type="checkbox" id="light" onClick="light()" />
                     <span class="slider"></span>
                   </label>
@@ -86,8 +105,8 @@
                     alt="Oligarch Main"
                   />
                 </div>
-                <div class="infobox-boldtext fortis">
-                  Fortis fortuna adiuvat.
+                <div class="infobox-boldtext">
+                  <h1 class="fortis">Fortis fortuna adiuvat.</h1>
                 </div>
                 <p class="infobox-slimtext oli-text">
                   Oligarch is an exclusive organisation that brings together
@@ -106,7 +125,7 @@
         <section class="auction-sec" id="auction">
           <div class="container">
             <div class="discover-title">
-              <p class="lore-margin-title">Lore</p>
+              <h2 class="lore-margin-title discover-title">Lore</h2>
             </div>
             <div class="ag-timeline-block">
               <div class="ag-format-container">
@@ -142,6 +161,7 @@
                               class="ag-timeline-card_img"
                               width="640"
                               height="360"
+                              alt="Lore First"
                             />
                           </div>
                           <div class="ag-timeline-card_info">
@@ -239,7 +259,7 @@
           <div class="container">
             <div class="discover">
               <div class="discover-title">
-                <p class="lore-margin-title">Gallery</p>
+                <h2 class="lore-margin-title discover-title">Gallery</h2>
               </div>
               <div class="discover-items">
                 <div class="item-wrapper">
@@ -247,6 +267,7 @@
                     <img
                       class="item-img"
                       src="images/gallery/hidden one.jpeg"
+                      alt="Hidden One"
                     />
                     <div class="item-title">
                       <p class="item-parag first-title">The Hidden One</p>
@@ -255,7 +276,11 @@
                     </div>
                   </div>
                   <div class="item">
-                    <img class="item-img" src="images/gallery/Da Ra.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Da Ra.png"
+                      alt="Da Ra"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Da Ra</p>
                       <p class="item-parag second-title">The Sand Knight</p>
@@ -270,7 +295,11 @@
                     </div>
                   </div>
                   <div class="item">
-                    <img class="item-img" src="images/gallery/knight53.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/knight53.png"
+                      alt="Knight 53"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Celestian</p>
                       <p class="item-parag second-title">The Moon Knight</p>
@@ -283,7 +312,11 @@
                   </div>
 
                   <div class="item">
-                    <img class="item-img" src="images/gallery/Angelus.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Angelus.png"
+                      alt="Angelus"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Angelus</p>
                       <p class="item-parag second-title">The Punisher</p>
@@ -298,7 +331,11 @@
                     </div>
                   </div>
                   <div class="item">
-                    <img class="item-img" src="images/gallery/Glitnir.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Glitnir.png"
+                      alt="Glitnir"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Glitnir</p>
                       <p class="item-parag second-title">
@@ -315,7 +352,11 @@
                     </div>
                   </div>
                   <div class="item">
-                    <img class="item-img" src="images/gallery/camellia.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/camellia.png"
+                      alt="Camellia"
+                    />
 
                     <div class="item-title">
                       <p class="item-parag first-title">Camellia</p>
@@ -330,10 +371,12 @@
                       </p>
                     </div>
                   </div>
-
                   <div class="item">
-                    <img class="item-img" src="images/gallery/Lava.png" />
-
+                    <img
+                      class="item-img"
+                      src="images/gallery/Lava.png"
+                      alt="Lava"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Lava</p>
                       <p class="item-parag second-title">The Molten Knight</p>
@@ -348,7 +391,11 @@
                     </div>
                   </div>
                   <div class="item">
-                    <img class="item-img" src="images/gallery/Menel.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Menel.png"
+                      alt="Menel"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Menel</p>
                       <p class="item-parag second-title">The Sublime Knight</p>
@@ -363,7 +410,11 @@
                     </div>
                   </div>
                   <div class="item">
-                    <img class="item-img" src="images/gallery/Midas.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Midas.png"
+                      alt="Midas"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Midas</p>
                       <p class="item-parag second-title">The Cursed Knight</p>
@@ -378,7 +429,11 @@
                     </div>
                   </div>
                   <div class="item">
-                    <img class="item-img" src="images/gallery/Minotaur.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Minotaur.png"
+                      alt="Minotaur"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Minotaur</p>
                       <p class="item-parag second-title">
@@ -394,7 +449,11 @@
                     </div>
                   </div>
                   <div class="item">
-                    <img class="item-img" src="images/gallery/Spartan.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Spartan.png"
+                      alt="Spartan"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Spartan</p>
                       <p class="item-parag second-title">The Warrior Knight</p>
@@ -409,7 +468,11 @@
                     </div>
                   </div>
                   <div class="item">
-                    <img class="item-img" src="images/gallery/Aja.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Aja.png"
+                      alt="Aja"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Aja</p>
                       <p class="item-parag second-title">
@@ -425,7 +488,11 @@
                     </div>
                   </div>
                   <div class="item">
-                    <img class="item-img" src="images/gallery/atar.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/atar.png"
+                      alt="Atar"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Atar</p>
                       <p class="item-parag second-title">The Bastard Knight</p>
@@ -441,7 +508,11 @@
                     </div>
                   </div>
                   <div class="item">
-                    <img class="item-img" src="images/gallery/phylax.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/phylax.png"
+                      alt="Phylax"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Phylax</p>
                       <p class="item-parag second-title">The Giant Knight</p>
@@ -455,7 +526,11 @@
                     </div>
                   </div>
                   <div class="item">
-                    <img class="item-img" src="images/gallery/Lähettiläs.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Lähettiläs.png"
+                      alt="Lähettiläs"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Lähettiläs</p>
                       <p class="item-parag second-title">The Herald Knight</p>
@@ -470,7 +545,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Andlát.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Andlát.png"
+                      alt="Andlát"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Andlát</p>
                       <p class="item-parag second-title">The Lord of Death</p>
@@ -483,7 +562,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Raistlin.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Raistlin.png"
+                      alt="Raistlin"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Raistlin</p>
                       <p class="item-parag second-title">The Mage Knight</p>
@@ -496,7 +579,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Commodus.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Commodus.png"
+                      alt="Commodus"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Commodus</p>
                       <p class="item-parag second-title">The Emperor Knight</p>
@@ -509,7 +596,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Tuoni.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Tuoni.png"
+                      alt="Tuoni"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Tuoni</p>
                       <p class="item-parag second-title">The Blind Knight</p>
@@ -523,7 +614,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Xemx.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Xemx.png"
+                      alt="Xemx"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Xemx</p>
                       <p class="item-parag second-title">
@@ -539,7 +634,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Fukurokuju.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Fukurokuju.png"
+                      alt="Fukurokuju"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Fukurokuju</p>
                       <p class="item-parag second-title">
@@ -554,7 +653,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Gawain.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Gawain.png"
+                      alt="Gawain"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Gawain</p>
                       <p class="item-parag second-title">The Proud Knight</p>
@@ -568,7 +671,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Heimdallr.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Heimdallr.png"
+                      alt="Heimdallr"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Heimdallr</p>
                       <p class="item-parag second-title">The Noble Knight</p>
@@ -580,7 +687,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Hector.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Hector.png"
+                      alt="Hector"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Hector</p>
                       <p class="item-parag second-title">
@@ -597,7 +708,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Aerin.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Aerin.png"
+                      alt="Aerin"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Aerin</p>
                       <p class="item-parag second-title">The Eagle Knight</p>
@@ -613,7 +728,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Gorthaur.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Gorthaur.png"
+                      alt="Gorthaur"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Gorthaur</p>
                       <p class="item-parag second-title">The Depraved Knight</p>
@@ -629,7 +748,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Hadar.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Hadar.png"
+                      alt="Hadar"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Hadar</p>
                       <p class="item-parag second-title">The Green Knight</p>
@@ -643,7 +766,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Mfalme.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Mfalme.png"
+                      alt="Mfalme"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Mfalme</p>
                       <p class="item-parag second-title">The Arrogant Knight</p>
@@ -657,7 +784,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Balor.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Balor.png"
+                      alt="Balor"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Balor</p>
                       <p class="item-parag second-title">
@@ -674,7 +805,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Svartr.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Svartr.png"
+                      alt="Svartr"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Svartr</p>
                       <p class="item-parag second-title">The Black Knight</p>
@@ -688,7 +823,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Orodreth.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Orodreth.png"
+                      alt="Orodreth"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Orodreth</p>
                       <p class="item-parag second-title">The Golden Knight</p>
@@ -701,7 +840,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Ernil.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Ernil.png"
+                      alt="Ernil"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Ernil</p>
                       <p class="item-parag second-title">The Vengeful Knight</p>
@@ -716,7 +859,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Nuada.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Nuada.png"
+                      alt="Nuada"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Nuada</p>
                       <p class="item-parag second-title">The Bitter Knight</p>
@@ -730,7 +877,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Fenrir.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Fenrir.png"
+                      alt="Fenrir"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Fenrir</p>
                       <p class="item-parag second-title">The Savage Knight</p>
@@ -743,7 +894,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Hjalmar.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Hjalmar.png"
+                      alt="Hjalmar"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Hjalmar</p>
                       <p class="item-parag second-title">
@@ -759,7 +914,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Ajax.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Ajax.png"
+                      alt="Ajax"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Ajax</p>
                       <p class="item-parag second-title">
@@ -774,7 +933,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Archambaud.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Archambaud.png"
+                      alt="Archambaud"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Archambaud</p>
                       <p class="item-parag second-title">The Gilded Knight</p>
@@ -788,7 +951,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Hayate.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Hayate.png"
+                      alt="Hayate"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Hayate</p>
                       <p class="item-parag second-title">The Silent Knight</p>
@@ -801,7 +968,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Castor.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Castor.png"
+                      alt="Castor"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Castor</p>
                       <p class="item-parag second-title">The Greiving Knight</p>
@@ -815,7 +986,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Zinariya.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Zinariya.png"
+                      alt="Zinariya"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Zinariya</p>
                       <p class="item-parag second-title">
@@ -832,7 +1007,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Spartan.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Spartan.png"
+                      alt="Spartan"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Grimmur</p>
                       <p class="item-parag second-title">The Divine Evil</p>
@@ -845,7 +1024,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Imperator.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Imperator.png"
+                      alt="Imperator"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Imperator</p>
                       <p class="item-parag second-title">The Emperor Knight</p>
@@ -859,7 +1042,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Dauðamaðr.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Dauðamaðr.png"
+                      alt="Dauðamaðr"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Dauðamaðr</p>
                       <p class="item-parag second-title">The Lord of Knives</p>
@@ -872,7 +1059,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Menelaus.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Menelaus.png"
+                      alt="Menelaus"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Menelaus</p>
                       <p class="item-parag second-title">The Knight of Valor</p>
@@ -884,7 +1075,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Orrszarvú.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Orrszarvú.png"
+                      alt="Orrszarvú"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Orrszarvú</p>
                       <p class="item-parag second-title">The Rhino Knight</p>
@@ -897,7 +1092,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Hunyon.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Hunyon.png"
+                      alt="Hunyon"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Hunyon</p>
                       <p class="item-parag second-title">The Lord of Steel</p>
@@ -910,7 +1109,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Trygve.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Trygve.png"
+                      alt="Trygve"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Trygve</p>
                       <p class="item-parag second-title">The Trustworthy</p>
@@ -923,7 +1126,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Voras.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Voras.png"
+                      alt="Voras"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Voras</p>
                       <p class="item-parag second-title">The Spider</p>
@@ -936,7 +1143,11 @@
                     </div>
                   </div>
                   <div class="item hidden-item">
-                    <img class="item-img" src="images/gallery/Badak.png" />
+                    <img
+                      class="item-img"
+                      src="images/gallery/Badak.png"
+                      alt="Badak"
+                    />
                     <div class="item-title">
                       <p class="item-parag first-title">Badak</p>
                       <p class="item-parag second-title">The Iron Knight</p>
