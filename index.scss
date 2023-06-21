@@ -18,6 +18,8 @@ body {
 }
 
 header {
+  padding: 18px;
+
   .header {
     display: none;
     .navbar {
@@ -122,6 +124,7 @@ header {
         padding: 20px;
         border-radius: 8px;
         z-index: 22222;
+        height: 310px;
         box-shadow: 0px 0px 12px rgb(255 255 255);
       }
 
@@ -638,16 +641,27 @@ main {
         transform: scale(1.1);
         object-fit: cover;
         transition: transform 0.3s ease;
-        box-shadow: 0 1.5px 0 0 #9b51e0;
       }
     }
   }
 
+  .navlin2 {
+    &:hover {
+      border-bottom: none !important;
+      transform: scale(1.1);
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+  }
   .navlink {
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 32px;
     color: #f3eeee;
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
+
     cursor: pointer;
     .switch {
       width: 48px;
@@ -695,12 +709,9 @@ main {
 
     &:hover {
       border-bottom: 1px solid #9b51e0;
-      transform: scale(1.1);
+      transform: scale(1.03);
       object-fit: cover;
-      transition: transform 0.3s ease;
-      &:last-child {
-        border: none;
-      }
+      transition: transform 0.1s ease;
     }
     &.selectedlink {
       background: linear-gradient(93.51deg, #9b51e0 2.84%, #3081ed 99.18%);
@@ -739,7 +750,6 @@ main {
       line-height: 36px;
       letter-spacing: 1px;
       text-align: center;
-      width: 100%;
       max-width: 1128px;
     }
 
@@ -915,15 +925,20 @@ main {
 .team {
   animation-name: rightslide;
   animation-duration: 0.8s;
+  .container {
+    padding: 24px;
+  }
   .discover {
     .discover-items {
       .item-wrapper {
+        @media (max-width: 991px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
         .item {
           padding: 16px;
           width: 100%;
           margin-top: 20px;
           .item-img {
-            object-fit: initial;
             max-width: 564px;
             max-height: 452px;
           }
@@ -1012,6 +1027,11 @@ main {
       backdrop-filter: blur(74.4293px);
     }
   }
+}
+
+.lore-margin-title {
+  margin: 62px auto;
+  text-transform: uppercase;
 }
 
 .discover {
@@ -1128,11 +1148,13 @@ main {
 }
 
 .item-wrapper {
-  display: flex;
   transition: 2s ease-in;
   animation: fade-out 2s linear;
   opacity: 0;
   transform: translateY(20px);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 .item-wrapper:not(.hidden-item) {
   opacity: 1;
@@ -1241,11 +1263,8 @@ main {
     position: relative;
   }
 
-  .ag-timeline-block {
-  }
   .ag-timeline_title-box {
     padding: 0 0 30px;
-
     text-align: center;
   }
   .ag-timeline_tagline {
@@ -1266,12 +1285,15 @@ main {
     margin: 0 0 100px;
     position: relative;
   }
+ 
+
   .ag-timeline_item:nth-child(2n) {
     text-align: right;
   }
 
   .lore-margin-title {
-    margin-bottom: 62px;
+    margin: 62px auto;
+    text-transform: uppercase;
   }
   .ag-timeline {
     display: inline-block;
@@ -1345,7 +1367,6 @@ main {
     display: inline-block;
     width: 45%;
     margin: -77px 0 0;
-    background-color: #282828;
 
     opacity: 0;
 
@@ -1621,16 +1642,11 @@ main {
     margin: 8px 0 8px 0;
   }
   &-img {
-    object-fit: cover;
-    flex-shrink: 0;
-    width: 100%;
-    height: 100%;
-    max-width: 660px;
-    max-height: 361px;
+    //here here here
     border-radius: 10px;
     transition: 0.3s;
     cursor: pointer;
-
+    width: 100%;
     &:hover {
       transform: scale(1.05);
     }
@@ -1793,6 +1809,9 @@ main {
     height: 20%;
     background-color: yellow;
   }
+  .ag-timeline-card_desc {
+    color: #000000;
+  }
   .ag-timeline_line {
     border: 1px solid rgba(0, 0, 0, 0.44);
   }
@@ -1940,6 +1959,7 @@ main {
   width: 100%;
   .social-icons {
     width: 30px;
+    border-radius: 5px;
   }
 }
 
@@ -1948,6 +1968,9 @@ main {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  @media screen and (max-width: 991px) {
+    justify-content: flex-start !important;
+  }
 }
 .others {
   display: flex;
@@ -1994,7 +2017,7 @@ main {
 
   .others {
     position: static;
-    margin-top: 20px;
+    margin-top: 10px;
     flex-direction: column;
   }
 }
@@ -2243,3 +2266,4 @@ main {
 }
 
 @import "animation";
+@import "responsive";
