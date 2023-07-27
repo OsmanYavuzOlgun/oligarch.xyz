@@ -724,7 +724,6 @@ main {
     animation-name: leftslide;
     animation-duration: 0.8s;
     margin: 0 auto;
-    margin-top: 128px;
     &-boldtext {
       margin: 0;
       color: #ffffff;
@@ -1031,6 +1030,7 @@ main {
   font-size: 36px;
   letter-spacing: -1px;
   color: #ffffff;
+  margin-top: 0 !important;
 }
 .discover {
   &-title {
@@ -1298,6 +1298,7 @@ main {
     font-size: 36px;
     letter-spacing: -1px;
     color: #ffffff;
+    margin-top: 0 !important;
   }
   .ag-timeline {
     display: inline-block;
@@ -1732,6 +1733,10 @@ main {
 .light-vision {
   background-color: #ffffff;
   transition: 0.8s;
+
+  .lore-margin-title{
+    color: black;
+  }
   .hamburger.light {
     color: black;
   }

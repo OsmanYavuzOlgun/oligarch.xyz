@@ -23,52 +23,52 @@
   background-color: white;
 }
 .sky-stars .dot:nth-child(1) {
-  top: 47%;
-  left: 88%;
-}
-.sky-stars .dot:nth-child(2) {
-  top: 11%;
-  left: 3%;
-}
-.sky-stars .dot:nth-child(3) {
-  top: 23%;
-  left: 29%;
-}
-.sky-stars .dot:nth-child(4) {
-  top: 40%;
-  left: 60%;
-}
-.sky-stars .dot:nth-child(5) {
-  top: 18%;
-  left: 23%;
-}
-.sky-stars .dot:nth-child(6) {
-  top: 46%;
-  left: 99%;
-}
-.sky-stars .dot:nth-child(7) {
-  top: 13%;
-  left: 52%;
-}
-.sky-stars .dot:nth-child(8) {
-  top: 44%;
-  left: 45%;
-}
-.sky-stars .dot:nth-child(9) {
-  top: 24%;
+  top: 48%;
   left: 6%;
 }
-.sky-stars .dot:nth-child(10) {
+.sky-stars .dot:nth-child(2) {
+  top: 77%;
+  left: 86%;
+}
+.sky-stars .dot:nth-child(3) {
+  top: 35%;
+  left: 23%;
+}
+.sky-stars .dot:nth-child(4) {
+  top: 76%;
+  left: 48%;
+}
+.sky-stars .dot:nth-child(5) {
+  top: 55%;
+  left: 7%;
+}
+.sky-stars .dot:nth-child(6) {
   top: 9%;
-  left: 77%;
+  left: 38%;
+}
+.sky-stars .dot:nth-child(7) {
+  top: 33%;
+  left: 43%;
+}
+.sky-stars .dot:nth-child(8) {
+  top: 4%;
+  left: 68%;
+}
+.sky-stars .dot:nth-child(9) {
+  top: 81%;
+  left: 43%;
+}
+.sky-stars .dot:nth-child(10) {
+  top: 80%;
+  left: 67%;
 }
 .sky-stars .dot:nth-child(11) {
-  top: 60%;
-  left: 96%;
+  top: 41%;
+  left: 75%;
 }
 .sky-stars .dot:nth-child(12) {
-  top: 47%;
-  left: 56%;
+  top: 58%;
+  left: 55%;
 }
 .sky-stars .dot--blinking {
   animation: blink 12.25s linear infinite;

@@ -649,7 +649,6 @@ main .footer2 .copyright {
   animation-name: leftslide;
   animation-duration: 0.8s;
   margin: 0 auto;
-  margin-top: 128px;
 }
 .box .infobox-boldtext {
   margin: 0;
@@ -917,6 +916,7 @@ main .footer2 .copyright {
   font-size: 36px;
   letter-spacing: -1px;
   color: #ffffff;
+  margin-top: 0 !important;
 }
 
 .discover-title {
@@ -1161,6 +1161,7 @@ main .footer2 .copyright {
   font-size: 36px;
   letter-spacing: -1px;
   color: #ffffff;
+  margin-top: 0 !important;
 }
 .auction-sec .ag-timeline {
   display: inline-block;
@@ -1536,6 +1537,9 @@ main .footer2 .copyright {
 .light-vision {
   background-color: #ffffff;
   transition: 0.8s;
+}
+.light-vision .lore-margin-title {
+  color: black;
 }
 .light-vision .hamburger.light {
   color: black;
@@ -1998,52 +2002,52 @@ main .footer2 .copyright {
   background-color: white;
 }
 .sky-stars .dot:nth-child(1) {
-  top: 47%;
-  left: 44%;
+  top: 76%;
+  left: 87%;
 }
 .sky-stars .dot:nth-child(2) {
-  top: 75%;
-  left: 60%;
+  top: 15%;
+  left: 84%;
 }
 .sky-stars .dot:nth-child(3) {
-  top: 11%;
-  left: 83%;
+  top: 85%;
+  left: 86%;
 }
 .sky-stars .dot:nth-child(4) {
-  top: 72%;
-  left: 60%;
+  top: 84%;
+  left: 51%;
 }
 .sky-stars .dot:nth-child(5) {
-  top: 86%;
-  left: 63%;
+  top: 69%;
+  left: 20%;
 }
 .sky-stars .dot:nth-child(6) {
-  top: 70%;
-  left: 3%;
+  top: 73%;
+  left: 64%;
 }
 .sky-stars .dot:nth-child(7) {
-  top: 47%;
-  left: 55%;
+  top: 73%;
+  left: 71%;
 }
 .sky-stars .dot:nth-child(8) {
-  top: 6%;
-  left: 45%;
+  top: 42%;
+  left: 14%;
 }
 .sky-stars .dot:nth-child(9) {
-  top: 87%;
-  left: 91%;
+  top: 4%;
+  left: 81%;
 }
 .sky-stars .dot:nth-child(10) {
-  top: 69%;
-  left: 65%;
+  top: 38%;
+  left: 35%;
 }
 .sky-stars .dot:nth-child(11) {
-  top: 64%;
-  left: 80%;
+  top: 76%;
+  left: 87%;
 }
 .sky-stars .dot:nth-child(12) {
-  top: 75%;
-  left: 92%;
+  top: 57%;
+  left: 25%;
 }
 .sky-stars .dot--blinking {
   animation: blink 12.25s linear infinite;
