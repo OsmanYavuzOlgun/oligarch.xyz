@@ -40,6 +40,14 @@
     padding: 0 20px 0 20px;
     font-size: 28px !important;
   }
+
+  .box {
+    .infobox {
+      &-boldtext {
+        margin-bottom: 80px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -59,6 +67,7 @@
 @media screen and (max-width: 480px) {
   .fortis {
     font-size: 24px !important;
+    margin-bottom: 80px !important;
   }
   .oli-text {
     max-width: 350px !important;
@@ -67,4 +76,23 @@
   .marginImg {
     padding: 16px;
   }
+
+  .box {
+    .infobox {
+      &-boldtext {
+        margin-bottom: 54px;
+      }
+      &-slimtext {
+        font-size: 20px !important;
+        max-width: 368px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  body{
+    overflow-y: scroll;
+  }
+  
 }

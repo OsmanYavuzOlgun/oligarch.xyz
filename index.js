@@ -78,7 +78,7 @@ document.getElementById("stars").innerHTML += dotStars + smallStars + bigStars;
 function showIntroduction() {
   var section = document.getElementById("introduction");
   section.style.display = "block";
-
+  document.body.style.overflowY = "hidden";
   var otherSections = document.querySelectorAll(
     "section:not(#introduction):not(#sidebar):not(.header)"
   );
@@ -91,7 +91,7 @@ isWorking = false;
 function showAuction() {
   var section = document.getElementById("auction");
   section.style.display = "block";
-
+  document.body.style.overflowY = "scroll";
   var otherSections = document.querySelectorAll(
     "section:not(#auction):not(#sidebar):not(.header)"
   );
@@ -104,6 +104,7 @@ function showAuction() {
 function showTeam() {
   var section = document.getElementById("team");
   section.style.display = "block";
+  document.body.style.overflowY = "scroll";
 
   var otherSections = document.querySelectorAll(
     "section:not(#team):not(#sidebar):not(.header)"
@@ -116,6 +117,7 @@ function showTeam() {
 function showGallery() {
   var section = document.getElementById("gallery");
   section.style.display = "block";
+  document.body.style.overflowY = "scroll";
 
   var otherSections = document.querySelectorAll(
     "section:not(#gallery):not(#sidebar):not(.header)"
@@ -140,36 +142,36 @@ function light() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   var wrappersMax = 12;
   var wrappers = document.querySelectorAll(".item");
   var loadMoreButton = document.getElementById("load-more");
 
   for (var i = 0; i < wrappers.length; i++) {
     if (i >= wrappersMax) {
-      wrappers[i].classList.add('hidden-item');
+      wrappers[i].classList.add("hidden-item");
     } else {
-      wrappers[i].classList.remove('hidden-item');
+      wrappers[i].classList.remove("hidden-item");
     }
   }
 
-  loadMoreButton.addEventListener("click", function() {
-    loadMoreButton.classList.add('loading');
-    setTimeout(function() {
-      loadMoreButton.classList.remove('loading');
+  loadMoreButton.addEventListener("click", function () {
+    loadMoreButton.classList.add("loading");
+    setTimeout(function () {
+      loadMoreButton.classList.remove("loading");
 
-      var hiddenWrappers = document.querySelectorAll('.item.hidden-item');
+      var hiddenWrappers = document.querySelectorAll(".item.hidden-item");
       var loadMoreCount = 12;
 
       for (var i = 0; i < loadMoreCount; i++) {
         if (hiddenWrappers[i] !== undefined) {
-          hiddenWrappers[i].classList.remove('hidden-item');
+          hiddenWrappers[i].classList.remove("hidden-item");
         }
       }
 
       // hide the button when there are no more items to show
-      if (document.querySelectorAll('.item.hidden-item').length == 0) {
-        loadMoreButton.style.display = 'none';
+      if (document.querySelectorAll(".item.hidden-item").length == 0) {
+        loadMoreButton.style.display = "none";
       }
     }, 1000); // simulate a delay of 1 second
   });
@@ -177,22 +179,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
 (function ($) {
   $(function () {
-
-
-    $(window).on('scroll', function () {
+    $(window).on("scroll", function () {
       fnOnScroll();
     });
 
-    $(window).on('resize', function () {
+    $(window).on("resize", function () {
       fnOnResize();
     });
 
-
-    var agTimeline = $('.js-timeline'),
-      agTimelineLine = $('.js-timeline_line'),
-      agTimelineLineProgress = $('.js-timeline_line-progress'),
-      agTimelinePoint = $('.js-timeline-card_point-box'),
-      agTimelineItem = $('.js-timeline_item'),
+    var agTimeline = $(".js-timeline"),
+      agTimelineLine = $(".js-timeline_line"),
+      agTimelineLineProgress = $(".js-timeline_line-progress"),
+      agTimelinePoint = $(".js-timeline-card_point-box"),
+      agTimelineItem = $(".js-timeline_item"),
       agOuterHeight = $(window).outerHeight(),
       agHeight = $(window).height(),
       f = -1,
@@ -215,11 +214,16 @@ document.addEventListener("DOMContentLoaded", function() {
       agFlag = false;
 
       agTimelineLine.css({
-        top: agTimelineItem.first().find(agTimelinePoint).offset().top - agTimelineItem.first().offset().top,
-        bottom: agTimeline.offset().top + agTimeline.outerHeight() - agTimelineItem.last().find(agTimelinePoint).offset().top
+        top:
+          agTimelineItem.first().find(agTimelinePoint).offset().top -
+          agTimelineItem.first().offset().top,
+        bottom:
+          agTimeline.offset().top +
+          agTimeline.outerHeight() -
+          agTimelineItem.last().find(agTimelinePoint).offset().top,
       });
 
-      f !== agPosY && (f = agPosY, agHeight, fnUpdateProgress());
+      f !== agPosY && ((f = agPosY), agHeight, fnUpdateProgress());
     }
 
     function fnUpdateProgress() {
@@ -229,20 +233,20 @@ document.addEventListener("DOMContentLoaded", function() {
       a = agTimelineLineProgress.offset().top + agPosY - $(window).scrollTop();
       n = agPosY - a + agOuterHeight / 2;
       i <= agPosY + agOuterHeight / 2 && (n = i - a);
-      agTimelineLineProgress.css({height: n + "px"});
+      agTimelineLineProgress.css({ height: n + "px" });
 
       agTimelineItem.each(function () {
         var agTop = $(this).find(agTimelinePoint).offset().top;
 
-        (agTop + agPosY - $(window).scrollTop()) < agPosY + .5 * agOuterHeight ? $(this).addClass('js-ag-active') : $(this).removeClass('js-ag-active');
-      })
+        agTop + agPosY - $(window).scrollTop() < agPosY + 0.5 * agOuterHeight
+          ? $(this).addClass("js-ag-active")
+          : $(this).removeClass("js-ag-active");
+      });
     }
 
     function fnUpdateFrame() {
       agFlag || requestAnimationFrame(fnUpdateWindow);
       agFlag = true;
     }
-
-
   });
 })(jQuery);
