@@ -2005,52 +2005,52 @@ main .footer2 .copyright {
   background-color: white;
 }
 .sky-stars .dot:nth-child(1) {
-  top: 49%;
-  left: 81%;
+  top: 46%;
+  left: 57%;
 }
 .sky-stars .dot:nth-child(2) {
-  top: 52%;
-  left: 87%;
+  top: 80%;
+  left: 7%;
 }
 .sky-stars .dot:nth-child(3) {
-  top: 28%;
+  top: 79%;
   left: 77%;
 }
 .sky-stars .dot:nth-child(4) {
-  top: 59%;
-  left: 92%;
+  top: 35%;
+  left: 94%;
 }
 .sky-stars .dot:nth-child(5) {
-  top: 58%;
-  left: 33%;
+  top: 85%;
+  left: 38%;
 }
 .sky-stars .dot:nth-child(6) {
-  top: 53%;
-  left: 25%;
+  top: 57%;
+  left: 23%;
 }
 .sky-stars .dot:nth-child(7) {
-  top: 53%;
-  left: 40%;
-}
-.sky-stars .dot:nth-child(8) {
-  top: 35%;
+  top: 38%;
   left: 92%;
 }
+.sky-stars .dot:nth-child(8) {
+  top: 13%;
+  left: 28%;
+}
 .sky-stars .dot:nth-child(9) {
-  top: 44%;
-  left: 47%;
+  top: 84%;
+  left: 53%;
 }
 .sky-stars .dot:nth-child(10) {
-  top: 61%;
-  left: 81%;
+  top: 6%;
+  left: 100%;
 }
 .sky-stars .dot:nth-child(11) {
-  top: 35%;
-  left: 77%;
+  top: 88%;
+  left: 7%;
 }
 .sky-stars .dot:nth-child(12) {
-  top: 17%;
-  left: 44%;
+  top: 71%;
+  left: 90%;
 }
 .sky-stars .dot--blinking {
   animation: blink 12.25s linear infinite;
@@ -2431,8 +2431,16 @@ main .footer2 .copyright {
     max-width: 368px !important;
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 340px) {
   body {
     overflow-y: scroll;
+  }
+}
+@media screen and (max-height: 840px) {
+  .box .infobox-boldtext {
+    margin-bottom: 60px;
+  }
+  .fortis {
+    margin-bottom: 64px !important;
   }
 }/*# sourceMappingURL=index.css.map */

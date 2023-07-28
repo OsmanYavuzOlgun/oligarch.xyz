@@ -90,9 +90,22 @@
   }
 }
 
-@media screen and (max-width: 300px) {
-  body{
+@media screen and (max-width: 340px) {
+  body {
     overflow-y: scroll;
   }
-  
+}
+
+@media screen and (max-height: 850px) {
+  .box {
+    .infobox {
+      &-boldtext {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  .fortis{
+    margin-bottom: 64px !important;
+  }
 }
