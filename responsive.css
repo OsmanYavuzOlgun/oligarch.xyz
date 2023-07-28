@@ -67,9 +67,16 @@
 }
 @media screen and (max-height: 860px) {
   .box .infobox-boldtext {
-    margin-bottom: 60px;
+    margin-bottom: 0 !important;
+  }
+  .box .infobox-slimtext {
+    font-size: 32px;
+  }
+  .olimainimage {
+    width: 100%;
+    max-width: 550px;
   }
   .fortis {
-    margin-bottom: 64px !important;
+    margin-bottom: 52px !important;
   }
 }/*# sourceMappingURL=responsive.css.map */

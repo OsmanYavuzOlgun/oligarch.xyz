@@ -198,7 +198,8 @@ main .all-sections .right-section .team.custom_scrollbar::-webkit-scrollbar-trac
   -webkit-border-radius: 5px;
 }
 main section:not(.header):not(.footer-bottom) {
-  padding: 5.75rem 0;
+  padding: 3.25rem 0;
+  width: 100%;
   width: 100%;
   max-width: 1429px;
   margin: 0 auto;
@@ -2005,52 +2006,52 @@ main .footer2 .copyright {
   background-color: white;
 }
 .sky-stars .dot:nth-child(1) {
-  top: 80%;
-  left: 55%;
+  top: 6%;
+  left: 86%;
 }
 .sky-stars .dot:nth-child(2) {
-  top: 27%;
-  left: 25%;
+  top: 24%;
+  left: 58%;
 }
 .sky-stars .dot:nth-child(3) {
-  top: 46%;
-  left: 41%;
+  top: 2%;
+  left: 30%;
 }
 .sky-stars .dot:nth-child(4) {
-  top: 4%;
-  left: 22%;
+  top: 71%;
+  left: 39%;
 }
 .sky-stars .dot:nth-child(5) {
-  top: 56%;
-  left: 97%;
+  top: 58%;
+  left: 93%;
 }
 .sky-stars .dot:nth-child(6) {
-  top: 90%;
-  left: 88%;
+  top: 48%;
+  left: 40%;
 }
 .sky-stars .dot:nth-child(7) {
-  top: 28%;
-  left: 97%;
+  top: 88%;
+  left: 41%;
 }
 .sky-stars .dot:nth-child(8) {
-  top: 5%;
-  left: 78%;
+  top: 38%;
+  left: 37%;
 }
 .sky-stars .dot:nth-child(9) {
-  top: 69%;
-  left: 20%;
+  top: 12%;
+  left: 89%;
 }
 .sky-stars .dot:nth-child(10) {
-  top: 60%;
-  left: 44%;
+  top: 28%;
+  left: 45%;
 }
 .sky-stars .dot:nth-child(11) {
-  top: 74%;
-  left: 24%;
+  top: 72%;
+  left: 6%;
 }
 .sky-stars .dot:nth-child(12) {
-  top: 31%;
-  left: 99%;
+  top: 26%;
+  left: 32%;
 }
 .sky-stars .dot--blinking {
   animation: blink 12.25s linear infinite;
@@ -2438,9 +2439,16 @@ main .footer2 .copyright {
 }
 @media screen and (max-height: 860px) {
   .box .infobox-boldtext {
-    margin-bottom: 60px;
+    margin-bottom: 0 !important;
+  }
+  .box .infobox-slimtext {
+    font-size: 32px;
+  }
+  .olimainimage {
+    width: 100%;
+    max-width: 550px;
   }
   .fortis {
-    margin-bottom: 64px !important;
+    margin-bottom: 52px !important;
   }
 }/*# sourceMappingURL=index.css.map */

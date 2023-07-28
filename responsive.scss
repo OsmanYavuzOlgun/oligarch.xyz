@@ -100,12 +100,18 @@
   .box {
     .infobox {
       &-boldtext {
-        margin-bottom: 60px;
+        margin-bottom: 0 !important;
+      }
+      &-slimtext {
+        font-size: 32px;
       }
     }
   }
-
-  .fortis{
-    margin-bottom: 64px !important;
+  .olimainimage {
+    width: 100%;
+    max-width: 550px;
+  }
+  .fortis {
+    margin-bottom: 52px !important;
   }
 }
