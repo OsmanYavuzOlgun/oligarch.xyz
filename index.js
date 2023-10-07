@@ -142,7 +142,7 @@ function light() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+/* document.addEventListener("DOMContentLoaded", function () {
   var wrappersMax = 12;
   var wrappers = document.querySelectorAll(".item");
   var loadMoreButton = document.getElementById("load-more");
@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }, 1000); // simulate a delay of 1 second
   });
-});
+}); */
 
 (function ($) {
   $(function () {
