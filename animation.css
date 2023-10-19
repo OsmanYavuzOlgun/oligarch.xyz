@@ -23,52 +23,52 @@
   background-color: white;
 }
 .sky-stars .dot:nth-child(1) {
-  top: 45%;
-  left: 45%;
+  top: 26%;
+  left: 26%;
 }
 .sky-stars .dot:nth-child(2) {
-  top: 65%;
-  left: 13%;
+  top: 8%;
+  left: 98%;
 }
 .sky-stars .dot:nth-child(3) {
-  top: 62%;
-  left: 62%;
+  top: 64%;
+  left: 99%;
 }
 .sky-stars .dot:nth-child(4) {
-  top: 10%;
-  left: 4%;
+  top: 63%;
+  left: 69%;
 }
 .sky-stars .dot:nth-child(5) {
   top: 7%;
-  left: 71%;
+  left: 83%;
 }
 .sky-stars .dot:nth-child(6) {
-  top: 11%;
-  left: 82%;
+  top: 53%;
+  left: 46%;
 }
 .sky-stars .dot:nth-child(7) {
-  top: 90%;
-  left: 21%;
+  top: 5%;
+  left: 10%;
 }
 .sky-stars .dot:nth-child(8) {
-  top: 16%;
-  left: 38%;
+  top: 15%;
+  left: 19%;
 }
 .sky-stars .dot:nth-child(9) {
-  top: 70%;
-  left: 37%;
+  top: 77%;
+  left: 63%;
 }
 .sky-stars .dot:nth-child(10) {
-  top: 57%;
-  left: 37%;
+  top: 11%;
+  left: 26%;
 }
 .sky-stars .dot:nth-child(11) {
-  top: 76%;
-  left: 76%;
+  top: 10%;
+  left: 7%;
 }
 .sky-stars .dot:nth-child(12) {
-  top: 16%;
-  left: 68%;
+  top: 28%;
+  left: 20%;
 }
 .sky-stars .dot--blinking {
   animation: blink 12.25s linear infinite;
